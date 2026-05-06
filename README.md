@@ -2,7 +2,7 @@
 
 Live link: https://abroad-extension-salvation-kodak.trycloudflare.com
 
-![Project Screenshot](./images/<img width="2340" height="1406" alt="peptsight2" src="https://github.com/user-attachments/assets/344948d7-cd8c-4b93-b2fc-dd8040a8885d" />
+<img width="2340" height="1406" alt="peptsight2" src="https://github.com/user-attachments/assets/344948d7-cd8c-4b93-b2fc-dd8040a8885d" />
 .png)
 
 
