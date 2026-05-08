@@ -13,7 +13,7 @@
     "@anthropic-ai/sdk": "^0.40.1",
     "apify-client": "^2.11.1",
     "framer-motion": "^11.18.0",
-    "next": "15.1.6",
+    "next": "^15.5.18",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
