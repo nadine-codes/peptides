@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "AI-agent-powered peptide ecosystem intelligence. Educational research aggregation: trends, sentiment, market signals, claim consistency.",
   applicationName: "PeptSight",
   authors: [{ name: "PeptSight" }],
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export const viewport: Viewport = {
