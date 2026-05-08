@@ -1,7 +1,9 @@
 name: Scheduled intelligence refresh
 
-# Runs the PeptSight pipeline every 6 hours and commits the resulting
-# JSON reports to public/data/. Vercel auto-deploys on the resulting
+# Runs the PeptSight pipeline every 6 hours. Each research category runs in
+# its own parallel matrix job so a single slow/failing category cannot stall
+# the others. A final commit job collects whichever JSON reports succeeded
+# and pushes them to public/data/. Vercel auto-deploys on the resulting
 # commit, so visitors always see freshly-cached data with no live wait.
 #
 # Required repo secrets (Settings → Secrets and variables → Actions):
@@ -26,14 +28,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+    steps:
+      - id: set
+        env:
+          INPUT_CATS: ${{ github.event.inputs.categories }}
+        run: |
+          if [ -n "$INPUT_CATS" ]; then
+            json=$(echo "$INPUT_CATS" | tr ' ' '\n' | sed '/^$/d' | jq -R . | jq -s -c .)
+          else
+            json='["fat-loss","recovery","longevity","sleep","muscle-retention","cognitive-performance","skin-health"]'
+          fi
+          echo "matrix=$json" >> "$GITHUB_OUTPUT"
+
+  refresh:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        category: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -44,12 +65,45 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run refresh
+      - name: Refresh ${{ matrix.category }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-4-6' }}
-        run: npm run refresh -- ${{ github.event.inputs.categories }}
+        run: npm run refresh -- ${{ matrix.category }}
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-${{ matrix.category }}
+          path: public/data/${{ matrix.category }}.json
+          if-no-files-found: ignore
+          retention-days: 1
+
+  commit:
+    needs: refresh
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: data-*
+
+      - name: Move artifacts into public/data
+        run: |
+          mkdir -p public/data
+          shopt -s nullglob
+          for d in artifacts/data-*/; do
+            cp "$d"/*.json public/data/ 2>/dev/null || true
+          done
 
       - name: Commit refreshed reports
         run: |
