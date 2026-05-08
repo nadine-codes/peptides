@@ -1,0 +1,346 @@
+{
+  "category": "skin-health",
+  "category_label": "Skin Health",
+  "generated_at": "2026-05-08T03:43:24.473Z",
+  "mode": "live",
+  "peptides": [
+    {
+      "name": "GHK-Cu",
+      "signal_strength": "High",
+      "discussion_velocity": "+92%",
+      "velocity_pct": 92,
+      "consensus_score": "Strong",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "Among the most researched cosmetic peptides; strong evidence base for collagen synthesis, wound healing, and dermal repair.",
+      "research_themes": [
+        "Collagen synthesis literature",
+        "Wound healing trials",
+        "Hair follicle research"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Among the most researched cosmetic peptides; strong evidence base for collagen synthesis, wound healing, and dermal repair.",
+        "pros": [
+          "Skin texture improvements widely reported",
+          "Cosmetic-research backing"
+        ],
+        "concerns": [
+          "Sourcing variability in non-cosmetic preparations"
+        ],
+        "common_questions": [
+          "What does the strongest research on GHK-Cu actually show?",
+          "How is GHK-Cu sourced and what quality concerns exist?",
+          "How does GHK-Cu compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$80–$320 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "Very high",
+        "telehealth_visibility": "High"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Stimulates dermal collagen synthesis",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Supports wound healing",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Hair-growth support",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Topical vs. injectable framing",
+          "research": "Most cosmetic evidence is topical.",
+          "marketing": "Some vendors emphasize injectable use without context."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Application context",
+          "detail": "Strong topical evidence is sometimes extended to other routes.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "GHK-Cu — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=GHK-Cu",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — GHK-Cu discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=GHK-Cu",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor GHK-Cu listing",
+          "url": "https://example-vendor.com/ghk-cu",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic GHK-Cu page",
+          "url": "https://example-telehealth.com/ghk-cu",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Matrixyl",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+18%",
+      "velocity_pct": 18,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "A palmitoyl-pentapeptide widely used in cosmetic formulations. Evidence supports collagen-stimulation effects in topical use.",
+      "research_themes": [
+        "Cosmetic palmitoyl-peptide research",
+        "Topical anti-aging formulations"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A palmitoyl-pentapeptide widely used in cosmetic formulations.",
+        "pros": [
+          "Established topical evidence"
+        ],
+        "concerns": [
+          "Effect sizes are modest"
+        ],
+        "common_questions": [
+          "What does the strongest research on Matrixyl actually show?",
+          "How is Matrixyl sourced and what quality concerns exist?",
+          "How does Matrixyl compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Topical collagen-stimulation",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Visible wrinkle reduction",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Effect-size framing",
+          "research": "Modest measurable effects.",
+          "marketing": "Cosmetic marketing often implies strong visible change."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Effect-size mismatch",
+          "detail": "Marketing claims often exceed measured effects.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Matrixyl — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Matrixyl",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Matrixyl discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Matrixyl",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Matrixyl listing",
+          "url": "https://example-vendor.com/matrixyl",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Matrixyl page",
+          "url": "https://example-telehealth.com/matrixyl",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Argireline",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+22%",
+      "velocity_pct": 22,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "Often marketed as a 'topical Botox alternative.' Cosmetic literature shows modest topical effects on expression-line depth.",
+      "research_themes": [
+        "Acetyl-hexapeptide cosmetic research",
+        "Expression-line depth studies"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Often marketed as a 'topical Botox alternative.",
+        "pros": [
+          "Topical, low side-effect profile"
+        ],
+        "concerns": [
+          "'Topical Botox' framing exceeds actual effect size"
+        ],
+        "common_questions": [
+          "What does the strongest research on Argireline actually show?",
+          "How is Argireline sourced and what quality concerns exist?",
+          "How does Argireline compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Modest expression-line depth reduction",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "'Topical Botox' equivalence",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Botox-equivalence framing",
+          "research": "Modest cosmetic effect.",
+          "marketing": "Cosmetic copy frames it as a topical Botox alternative."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Marketing exaggeration",
+          "detail": "Cosmetic copy regularly exceeds research effect sizes.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Argireline — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Argireline",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Argireline discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Argireline",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Argireline listing",
+          "url": "https://example-vendor.com/argireline",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Argireline page",
+          "url": "https://example-telehealth.com/argireline",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "BPC-157",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+64%",
+      "velocity_pct": 64,
+      "consensus_score": "Weak",
+      "sentiment": "Mixed",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "Appears in skin-context discussion despite the bulk of evidence being GI and connective-tissue focused. Skin-context claims are largely speculative.",
+      "research_themes": [
+        "GI and tendon-repair pre-clinical literature",
+        "Skin-context claims as discussion drift"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Appears in skin-context discussion despite the bulk of evidence being GI and connective-tissue focused.",
+        "pros": [
+          "Generalized recovery anecdotes"
+        ],
+        "concerns": [
+          "Skin-context evidence is essentially absent"
+        ],
+        "common_questions": [
+          "What does the strongest research on BPC-157 actually show?",
+          "How is BPC-157 sourced and what quality concerns exist?",
+          "How does BPC-157 compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Skin-healing effects in humans",
+          "consensus": "Anecdotal"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Skin-context framing",
+          "research": "Most evidence is GI/tendon-focused (animal models).",
+          "marketing": "Some clinics extend claims to skin context."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Context drift",
+          "detail": "Skin-context claims rest on broader generalizations.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "BPC-157 — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=BPC-157",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — BPC-157 discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=BPC-157",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor BPC-157 listing",
+          "url": "https://example-vendor.com/bpc-157",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic BPC-157 page",
+          "url": "https://example-telehealth.com/bpc-157",
+          "tier": "telehealth"
+        }
+      ]
+    }
+  ]
+}

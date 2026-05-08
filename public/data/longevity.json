@@ -1,0 +1,358 @@
+{
+  "category": "longevity",
+  "category_label": "Longevity",
+  "generated_at": "2026-05-08T03:43:20.096Z",
+  "mode": "live",
+  "peptides": [
+    {
+      "name": "Epitalon",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+86%",
+      "velocity_pct": 86,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "A short tetrapeptide associated with telomere and pineal-function discussion. Independent peer-reviewed literature outside a small group of researchers is limited.",
+      "research_themes": [
+        "Telomere-related mechanism discussion",
+        "Pineal-function research from a narrow author cluster",
+        "Long-cycle protocol culture in vendor messaging"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A short tetrapeptide associated with telomere and pineal-function discussion.",
+        "pros": [
+          "Subjective sleep quality often mentioned"
+        ],
+        "concerns": [
+          "Independent research outside a narrow cluster is limited",
+          "Long-term human data sparse"
+        ],
+        "common_questions": [
+          "What does the strongest research on Epitalon actually show?",
+          "How is Epitalon sourced and what quality concerns exist?",
+          "How does Epitalon compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Telomere-length effects",
+          "consensus": "Weak",
+          "note": "Limited independent replication"
+        },
+        {
+          "claim": "Sleep quality improvements",
+          "consensus": "Anecdotal"
+        },
+        {
+          "claim": "Anti-aging marker improvements",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Anti-aging framing",
+          "research": "Independent literature is limited.",
+          "marketing": "Vendor pages routinely use 'anti-aging' framing."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Replication gap",
+          "detail": "Most research originates from a narrow author cluster.",
+          "severity": "watch"
+        },
+        {
+          "label": "Long-term data",
+          "detail": "Long-horizon human safety data is sparse.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epitalon — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Epitalon",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Epitalon discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Epitalon",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Epitalon listing",
+          "url": "https://example-vendor.com/epitalon",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Epitalon page",
+          "url": "https://example-telehealth.com/epitalon",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Thymalin",
+      "signal_strength": "Emerging",
+      "discussion_velocity": "+142%",
+      "velocity_pct": 142,
+      "consensus_score": "Weak",
+      "sentiment": "Mixed",
+      "research_activity": "Accelerating",
+      "risk_level": "Uncertain",
+      "trending": true,
+      "overview": "A thymus-derived peptide preparation discussed in immune-aging contexts, with most published work originating from a small research community.",
+      "research_themes": [
+        "Immune-senescence discussion",
+        "Geriatric population research from narrow source set"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A thymus-derived peptide preparation discussed in immune-aging contexts, with most published work originating from a small research community.",
+        "pros": [
+          "Subjective immune-resilience reports"
+        ],
+        "concerns": [
+          "Limited Western-publication coverage",
+          "Quality and sourcing variability"
+        ],
+        "common_questions": [
+          "What does the strongest research on Thymalin actually show?",
+          "How is Thymalin sourced and what quality concerns exist?",
+          "How does Thymalin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$60–$220 / vial mentioned",
+        "availability": "Limited; mostly research-chemical channels",
+        "market_activity": "Rising marketing visibility",
+        "vendor_frequency": "Medium",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Immune-aging modulation",
+          "consensus": "Weak"
+        },
+        {
+          "claim": "General longevity effect",
+          "consensus": "Anecdotal"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "'Longevity' framing",
+          "research": "Mechanism work is narrower than longevity claims imply.",
+          "marketing": "Vendor pages use broad longevity language."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Narrow evidence base",
+          "detail": "Most published evidence comes from a small research community.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Thymalin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Thymalin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Thymalin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Thymalin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Thymalin listing",
+          "url": "https://example-vendor.com/thymalin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Thymalin page",
+          "url": "https://example-telehealth.com/thymalin",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "GHK-Cu",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+38%",
+      "velocity_pct": 38,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "Re-appears in longevity discourse for gene-expression and skin-aging research. Strongest evidence remains in dermatological contexts.",
+      "research_themes": [
+        "Dermal collagen synthesis literature",
+        "Gene-expression discussion in aging contexts"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Re-appears in longevity discourse for gene-expression and skin-aging research.",
+        "pros": [
+          "Dermal benefits widely reported"
+        ],
+        "concerns": [
+          "Longevity-context claims are speculative"
+        ],
+        "common_questions": [
+          "What does the strongest research on GHK-Cu actually show?",
+          "How is GHK-Cu sourced and what quality concerns exist?",
+          "How does GHK-Cu compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Skin and hair improvements",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Systemic anti-aging effects",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Systemic anti-aging framing",
+          "research": "Strong dermal evidence.",
+          "marketing": "Vendor pages extend claims to systemic aging."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Context drift",
+          "detail": "Strong cosmetic evidence is often re-applied to systemic claims.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "GHK-Cu — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=GHK-Cu",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — GHK-Cu discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=GHK-Cu",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor GHK-Cu listing",
+          "url": "https://example-vendor.com/ghk-cu",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic GHK-Cu page",
+          "url": "https://example-telehealth.com/ghk-cu",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Humanin",
+      "signal_strength": "Emerging",
+      "discussion_velocity": "+220%",
+      "velocity_pct": 220,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Accelerating",
+      "risk_level": "Uncertain",
+      "trending": true,
+      "overview": "A mitochondrial-derived peptide actively studied in metabolic-aging research. Public discussion outpaces clinical maturity.",
+      "research_themes": [
+        "Mitochondrial-derived peptide research",
+        "Metabolic-aging mechanism discussion"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A mitochondrial-derived peptide actively studied in metabolic-aging research.",
+        "pros": [
+          "Active research signal"
+        ],
+        "concerns": [
+          "Public claims often outpace clinical readiness",
+          "Sparse human data"
+        ],
+        "common_questions": [
+          "What does the strongest research on Humanin actually show?",
+          "How is Humanin sourced and what quality concerns exist?",
+          "How does Humanin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$60–$220 / vial mentioned",
+        "availability": "Limited; mostly research-chemical channels",
+        "market_activity": "Rising marketing visibility",
+        "vendor_frequency": "Medium",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Mitochondrial-aging mechanism research",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Therapeutic applicability today",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Therapeutic readiness",
+          "research": "Mechanism research is real; therapeutic translation is early.",
+          "marketing": "Vendor mentions imply readiness."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Translational gap",
+          "detail": "Public claims frequently outpace clinical maturity.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Humanin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Humanin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Humanin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Humanin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Humanin listing",
+          "url": "https://example-vendor.com/humanin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Humanin page",
+          "url": "https://example-telehealth.com/humanin",
+          "tier": "telehealth"
+        }
+      ]
+    }
+  ]
+}

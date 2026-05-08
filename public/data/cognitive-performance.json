@@ -1,0 +1,351 @@
+{
+  "category": "cognitive-performance",
+  "category_label": "Cognitive Performance",
+  "generated_at": "2026-05-08T03:43:19.643Z",
+  "mode": "live",
+  "peptides": [
+    {
+      "name": "Semax",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+124%",
+      "velocity_pct": 124,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": true,
+      "overview": "An ACTH-fragment analog with Russian-origin clinical research. Western peer-reviewed coverage is limited; public discussion is enthusiastic.",
+      "research_themes": [
+        "BDNF/NGF expression discussion",
+        "Russian-origin clinical literature",
+        "Stroke-rehabilitation research"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: An ACTH-fragment analog with Russian-origin clinical research.",
+        "pros": [
+          "Subjective focus and motivation reports"
+        ],
+        "concerns": [
+          "Russian-origin trials less familiar to Western audiences",
+          "Intranasal sourcing variability"
+        ],
+        "common_questions": [
+          "What does the strongest research on Semax actually show?",
+          "How is Semax sourced and what quality concerns exist?",
+          "How does Semax compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Cognitive enhancement in healthy adults",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Stroke-rehabilitation utility",
+          "consensus": "Mixed",
+          "note": "Russian clinical context"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "'Smart drug' framing",
+          "research": "Most clinical research is rehabilitation-focused.",
+          "marketing": "Vendor pages use general 'cognitive enhancer' framing."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Sourcing variability",
+          "detail": "Intranasal preparations vary in concentration and purity.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Semax — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Semax",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Semax discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Semax",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Semax listing",
+          "url": "https://example-vendor.com/semax",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Semax page",
+          "url": "https://example-telehealth.com/semax",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Selank",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+88%",
+      "velocity_pct": 88,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "A heptapeptide analog of tuftsin with anxiolytic-leaning research. Cognitive-performance framing is more downstream than direct.",
+      "research_themes": [
+        "Anxiolytic mechanism research",
+        "Russian-origin clinical literature"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A heptapeptide analog of tuftsin with anxiolytic-leaning research.",
+        "pros": [
+          "Subjective calm-focus reports"
+        ],
+        "concerns": [
+          "Indirect cognitive mechanism",
+          "Sourcing variability"
+        ],
+        "common_questions": [
+          "What does the strongest research on Selank actually show?",
+          "How is Selank sourced and what quality concerns exist?",
+          "How does Selank compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Anxiolytic effect",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Direct cognitive enhancement",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Cognitive framing",
+          "research": "Primary mechanism is anxiolytic.",
+          "marketing": "Vendor pages emphasize cognitive enhancement directly."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Indirect mechanism",
+          "detail": "Cognitive effects appear to be downstream of anxiolytic action.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Selank — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Selank",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Selank discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Selank",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Selank listing",
+          "url": "https://example-vendor.com/selank",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Selank page",
+          "url": "https://example-telehealth.com/selank",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Cerebrolysin",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+62%",
+      "velocity_pct": 62,
+      "consensus_score": "Mixed",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Moderate",
+      "trending": false,
+      "overview": "A peptide preparation derived from porcine brain tissue, studied in stroke and dementia rehabilitation. Healthy-adult use is off-label and largely anecdotal.",
+      "research_themes": [
+        "Stroke and dementia rehabilitation literature",
+        "Porcine-origin preparation"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A peptide preparation derived from porcine brain tissue, studied in stroke and dementia rehabilitation.",
+        "pros": [
+          "Established rehabilitation-context evidence"
+        ],
+        "concerns": [
+          "Healthy-adult use is off-label",
+          "Cost and access"
+        ],
+        "common_questions": [
+          "What does the strongest research on Cerebrolysin actually show?",
+          "How is Cerebrolysin sourced and what quality concerns exist?",
+          "How does Cerebrolysin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Rehabilitation utility (stroke / dementia)",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Cognitive enhancement in healthy adults",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Off-label cognitive use",
+          "research": "Evidence is rehabilitation-context.",
+          "marketing": "Vendor pages frame it as a healthy-adult cognitive enhancer."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Off-label extrapolation",
+          "detail": "Rehabilitation evidence is often re-framed for general cognitive use.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cerebrolysin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Cerebrolysin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Cerebrolysin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Cerebrolysin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Cerebrolysin listing",
+          "url": "https://example-vendor.com/cerebrolysin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Cerebrolysin page",
+          "url": "https://example-telehealth.com/cerebrolysin",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Dihexa",
+      "signal_strength": "Emerging",
+      "discussion_velocity": "+188%",
+      "velocity_pct": 188,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": true,
+      "overview": "A small-molecule angiotensin-IV analog with strong pre-clinical synaptogenesis findings. Human evidence is essentially absent; community discussion is speculative.",
+      "research_themes": [
+        "Pre-clinical synaptogenesis findings",
+        "Hepatocyte growth factor pathway",
+        "Limited human data"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A small-molecule angiotensin-IV analog with strong pre-clinical synaptogenesis findings.",
+        "pros": [
+          "Striking pre-clinical mechanism"
+        ],
+        "concerns": [
+          "Human data essentially absent",
+          "Sourcing quality concerns"
+        ],
+        "common_questions": [
+          "What does the strongest research on Dihexa actually show?",
+          "How is Dihexa sourced and what quality concerns exist?",
+          "How does Dihexa compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$60–$220 / vial mentioned",
+        "availability": "Limited; mostly research-chemical channels",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "Medium",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Synaptogenesis (pre-clinical)",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Cognitive enhancement in humans",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Translational readiness",
+          "research": "Pre-clinical only.",
+          "marketing": "Vendor pages imply human applicability."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Translational gap",
+          "detail": "Pre-clinical findings have not been validated in human trials.",
+          "severity": "concern"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dihexa — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Dihexa",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Dihexa discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Dihexa",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Dihexa listing",
+          "url": "https://example-vendor.com/dihexa",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Dihexa page",
+          "url": "https://example-telehealth.com/dihexa",
+          "tier": "telehealth"
+        }
+      ]
+    }
+  ]
+}

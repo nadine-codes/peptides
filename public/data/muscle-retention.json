@@ -1,0 +1,355 @@
+{
+  "category": "muscle-retention",
+  "category_label": "Muscle Retention",
+  "generated_at": "2026-05-08T03:47:46.165Z",
+  "mode": "live",
+  "peptides": [
+    {
+      "name": "Ipamorelin",
+      "signal_strength": "High",
+      "discussion_velocity": "+116%",
+      "velocity_pct": 116,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Moderate",
+      "trending": true,
+      "overview": "A selective ghrelin-receptor agonist often paired with CJC-1295 in discussion. Public conversation focuses on lean-mass support and recovery; published trials are modest in scope.",
+      "research_themes": [
+        "Ghrelin-receptor selectivity",
+        "GH-pulsatile-release mechanism",
+        "CJC-1295 stacking culture"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A selective ghrelin-receptor agonist often paired with CJC-1295 in discussion.",
+        "pros": [
+          "Subjective recovery and sleep reports",
+          "Cleaner side-effect profile vs. older GHRPs reported"
+        ],
+        "concerns": [
+          "Long-term human data limited",
+          "Lean-mass claims often exceed evidence"
+        ],
+        "common_questions": [
+          "What does the strongest research on Ipamorelin actually show?",
+          "How is Ipamorelin sourced and what quality concerns exist?",
+          "How does Ipamorelin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$80–$320 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "Very high",
+        "telehealth_visibility": "High"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Triggers GH pulse",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Lean-mass increase in healthy adults",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Recovery improvements",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Body-composition framing",
+          "research": "Modest clinical effect sizes.",
+          "marketing": "Vendor pages emphasize muscle-building outcomes."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "GH-axis modulation",
+          "detail": "Long-term GH-axis effects in healthy adults are not well characterized.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ipamorelin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Ipamorelin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Ipamorelin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Ipamorelin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Ipamorelin listing",
+          "url": "https://example-vendor.com/ipamorelin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Ipamorelin page",
+          "url": "https://example-telehealth.com/ipamorelin",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "CJC-1295",
+      "signal_strength": "High",
+      "discussion_velocity": "+102%",
+      "velocity_pct": 102,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Moderate",
+      "trending": true,
+      "overview": "A GHRH analog typically discussed alongside Ipamorelin. Trial literature on the original DAC variant exists; the no-DAC variant is supported mostly by anecdotal use.",
+      "research_themes": [
+        "GHRH-analog mechanism",
+        "DAC vs. no-DAC distinction in discussion",
+        "Stacking culture with Ipamorelin"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A GHRH analog typically discussed alongside Ipamorelin.",
+        "pros": [
+          "Subjective recovery and sleep reports"
+        ],
+        "concerns": [
+          "DAC vs. no-DAC confusion in discussion",
+          "Long-term GH-axis effects unclear"
+        ],
+        "common_questions": [
+          "What does the strongest research on CJC-1295 actually show?",
+          "How is CJC-1295 sourced and what quality concerns exist?",
+          "How does CJC-1295 compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$80–$320 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "Very high",
+        "telehealth_visibility": "High"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Increases GH/IGF-1 levels",
+          "consensus": "Strong",
+          "note": "DAC variant"
+        },
+        {
+          "claim": "Increases muscle mass in healthy adults",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "DAC vs. no-DAC framing",
+          "research": "Different pharmacokinetics; trial data primarily for DAC variant.",
+          "marketing": "Vendor pages often blur the distinction."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "GH-axis modulation",
+          "detail": "Sustained GH-axis stimulation in healthy adults is not well characterized.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "CJC-1295 — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=CJC-1295",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — CJC-1295 discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=CJC-1295",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor CJC-1295 listing",
+          "url": "https://example-vendor.com/cjc-1295",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic CJC-1295 page",
+          "url": "https://example-telehealth.com/cjc-1295",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Tesamorelin",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+44%",
+      "velocity_pct": 44,
+      "consensus_score": "Strong",
+      "sentiment": "Mixed",
+      "research_activity": "Stable",
+      "risk_level": "Moderate",
+      "trending": false,
+      "overview": "An FDA-approved GHRH analog originally indicated for HIV-associated visceral adiposity. Off-label discussion has expanded into general body-composition contexts.",
+      "research_themes": [
+        "Visceral-adiposity research literature",
+        "Off-label discussion expansion"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: An FDA-approved GHRH analog originally indicated for HIV-associated visceral adiposity.",
+        "pros": [
+          "Strong indication-specific evidence"
+        ],
+        "concerns": [
+          "Off-label extrapolation",
+          "Cost"
+        ],
+        "common_questions": [
+          "What does the strongest research on Tesamorelin actually show?",
+          "How is Tesamorelin sourced and what quality concerns exist?",
+          "How does Tesamorelin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Reduces visceral adipose tissue (HIV-associated)",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Body-composition effects in healthy adults",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Off-label framing",
+          "research": "Strong evidence is indication-specific.",
+          "marketing": "Telehealth pages often extend claims to general body-composition use."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Off-label extrapolation",
+          "detail": "Strong indication-specific evidence is often re-framed for broader use.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tesamorelin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Tesamorelin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Tesamorelin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Tesamorelin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Tesamorelin listing",
+          "url": "https://example-vendor.com/tesamorelin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Tesamorelin page",
+          "url": "https://example-telehealth.com/tesamorelin",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Sermorelin",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+28%",
+      "velocity_pct": 28,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "A GHRH analog with a long history in clinical pediatric use; recently revived in adult anti-aging telehealth marketing.",
+      "research_themes": [
+        "Pediatric clinical history",
+        "Adult anti-aging telehealth revival"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: A GHRH analog with a long history in clinical pediatric use; recently revived in adult anti-aging telehealth marketing.",
+        "pros": [
+          "Familiar safety footprint"
+        ],
+        "concerns": [
+          "Modest effect sizes in adults"
+        ],
+        "common_questions": [
+          "What does the strongest research on Sermorelin actually show?",
+          "How is Sermorelin sourced and what quality concerns exist?",
+          "How does Sermorelin compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Stimulates endogenous GH release",
+          "consensus": "Strong"
+        },
+        {
+          "claim": "Body-composition effects in healthy adults",
+          "consensus": "Mixed"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Anti-aging framing",
+          "research": "Pediatric evidence is established; adult anti-aging evidence is modest.",
+          "marketing": "Telehealth pages emphasize anti-aging outcomes."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Modest effect sizes",
+          "detail": "Adult body-composition effects are typically modest in trials.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sermorelin — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Sermorelin",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Sermorelin discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Sermorelin",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Sermorelin listing",
+          "url": "https://example-vendor.com/sermorelin",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Sermorelin page",
+          "url": "https://example-telehealth.com/sermorelin",
+          "tier": "telehealth"
+        }
+      ]
+    }
+  ]
+}

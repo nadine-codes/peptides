@@ -1,0 +1,261 @@
+{
+  "category": "sleep",
+  "category_label": "Sleep",
+  "generated_at": "2026-05-08T03:43:16.497Z",
+  "mode": "live",
+  "peptides": [
+    {
+      "name": "DSIP",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+64%",
+      "velocity_pct": 64,
+      "consensus_score": "Weak",
+      "sentiment": "Mixed",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "Delta Sleep-Inducing Peptide. Discussed in sleep-architecture contexts; mainstream clinical evidence is older and limited.",
+      "research_themes": [
+        "Sleep-architecture mechanism discussion",
+        "Older clinical literature, limited recent activity"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Delta Sleep-Inducing Peptide.",
+        "pros": [
+          "Subjective deeper-sleep reports"
+        ],
+        "concerns": [
+          "Inconsistent effects",
+          "Sparse modern human trials"
+        ],
+        "common_questions": [
+          "What does the strongest research on DSIP actually show?",
+          "How is DSIP sourced and what quality concerns exist?",
+          "How does DSIP compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Modulates sleep architecture",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Reliable sleep-aid effect",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Reliability framing",
+          "research": "Mixed clinical results.",
+          "marketing": "Vendor pages frame it as a consistent sleep aid."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Inconsistent response",
+          "detail": "Subjective effects vary widely across users.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DSIP — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=DSIP",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — DSIP discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=DSIP",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor DSIP listing",
+          "url": "https://example-vendor.com/dsip",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic DSIP page",
+          "url": "https://example-telehealth.com/dsip",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Selank",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+92%",
+      "velocity_pct": 92,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Low",
+      "trending": false,
+      "overview": "An analog of tuftsin discussed primarily in anxiolytic and cognitive-tone contexts; sleep claims are secondary.",
+      "research_themes": [
+        "Anxiolytic-mechanism research",
+        "Russian-origin clinical literature"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: An analog of tuftsin discussed primarily in anxiolytic and cognitive-tone contexts; sleep claims are secondary.",
+        "pros": [
+          "Subjective calm and sleep onset reports"
+        ],
+        "concerns": [
+          "Russian-origin trials less familiar to Western audiences"
+        ],
+        "common_questions": [
+          "What does the strongest research on Selank actually show?",
+          "How is Selank sourced and what quality concerns exist?",
+          "How does Selank compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Anxiolytic effect",
+          "consensus": "Mixed"
+        },
+        {
+          "claim": "Direct sleep aid",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "'Sleep aid' framing",
+          "research": "Primary research is anxiolytic.",
+          "marketing": "Some vendor pages frame it primarily as a sleep aid."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Indirect sleep mechanism",
+          "detail": "Sleep effects are typically downstream of anxiolytic effects.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Selank — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Selank",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Selank discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Selank",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Selank listing",
+          "url": "https://example-vendor.com/selank",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Selank page",
+          "url": "https://example-telehealth.com/selank",
+          "tier": "telehealth"
+        }
+      ]
+    },
+    {
+      "name": "Epitalon",
+      "signal_strength": "Medium",
+      "discussion_velocity": "+56%",
+      "velocity_pct": 56,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "Discussed in pineal-function and sleep-onset contexts; independent peer-reviewed evidence is limited.",
+      "research_themes": [
+        "Pineal-function discussion",
+        "Long cycle culture in vendor messaging"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion: Discussed in pineal-function and sleep-onset contexts; independent peer-reviewed evidence is limited.",
+        "pros": [
+          "Subjective sleep onset reports"
+        ],
+        "concerns": [
+          "Independent replication limited"
+        ],
+        "common_questions": [
+          "What does the strongest research on Epitalon actually show?",
+          "How is Epitalon sourced and what quality concerns exist?",
+          "How does Epitalon compare with adjacent compounds?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Sleep-onset improvement",
+          "consensus": "Anecdotal"
+        },
+        {
+          "claim": "Pineal-function modulation",
+          "consensus": "Weak"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Sleep efficacy",
+          "research": "Limited independent evidence.",
+          "marketing": "Vendor pages frame it as a reliable sleep aid."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Replication gap",
+          "detail": "Most research from a narrow cluster.",
+          "severity": "watch"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Epitalon — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Epitalon",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — Epitalon discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Epitalon",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Epitalon listing",
+          "url": "https://example-vendor.com/epitalon",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Epitalon page",
+          "url": "https://example-telehealth.com/epitalon",
+          "tier": "telehealth"
+        }
+      ]
+    }
+  ]
+}
