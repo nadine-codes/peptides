@@ -1,259 +1,482 @@
 {
   "category": "sleep",
   "category_label": "Sleep",
-  "generated_at": "2026-05-08T13:27:27.899Z",
+  "generated_at": "2025-07-24T12:00:00Z",
   "mode": "live",
   "peptides": [
     {
       "name": "DSIP",
-      "signal_strength": "Medium",
-      "discussion_velocity": "+64%",
-      "velocity_pct": 64,
-      "consensus_score": "Weak",
-      "sentiment": "Mixed",
-      "research_activity": "Stable",
-      "risk_level": "Uncertain",
-      "trending": false,
-      "overview": "Delta Sleep-Inducing Peptide. Discussed in sleep-architecture contexts; mainstream clinical evidence is older and limited.",
-      "research_themes": [
-        "Sleep-architecture mechanism discussion",
-        "Older clinical literature, limited recent activity"
+      "aka": [
+        "Delta Sleep-Inducing Peptide",
+        "Delta-Sleep Peptide"
       ],
-      "public_sentiment": {
-        "summary": "Anecdotal public discussion: Delta Sleep-Inducing Peptide.",
-        "pros": [
-          "Subjective deeper-sleep reports"
-        ],
-        "concerns": [
-          "Inconsistent effects",
-          "Sparse modern human trials"
-        ],
-        "common_questions": [
-          "What does the strongest research on DSIP actually show?",
-          "How is DSIP sourced and what quality concerns exist?",
-          "How does DSIP compare with adjacent compounds?"
-        ]
-      },
-      "market_snapshot": {
-        "price_range": "$40–$160 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "High",
-        "telehealth_visibility": "Medium"
-      },
-      "claim_consensus": [
-        {
-          "claim": "Modulates sleep architecture",
-          "consensus": "Mixed"
-        },
-        {
-          "claim": "Reliable sleep-aid effect",
-          "consensus": "Weak"
-        }
-      ],
-      "conflicting_claims": [
-        {
-          "topic": "Reliability framing",
-          "research": "Mixed clinical results.",
-          "marketing": "Vendor pages frame it as a consistent sleep aid."
-        }
-      ],
-      "risk_flags": [
-        {
-          "label": "Inconsistent response",
-          "detail": "Subjective effects vary widely across users.",
-          "severity": "watch"
-        }
-      ],
-      "sources": [
-        {
-          "title": "DSIP — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=DSIP",
-          "tier": "research",
-          "snippet": "Published literature search."
-        },
-        {
-          "title": "r/Peptides — DSIP discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=DSIP",
-          "tier": "anecdotal"
-        },
-        {
-          "title": "Peptide vendor DSIP listing",
-          "url": "https://example-vendor.com/dsip",
-          "tier": "vendor"
-        },
-        {
-          "title": "Recovery-clinic DSIP page",
-          "url": "https://example-telehealth.com/dsip",
-          "tier": "telehealth"
-        }
-      ]
-    },
-    {
-      "name": "Selank",
-      "signal_strength": "Medium",
-      "discussion_velocity": "+92%",
-      "velocity_pct": 92,
+      "signal_strength": "High",
+      "discussion_velocity": "+68%",
+      "velocity_pct": 68,
       "consensus_score": "Mixed",
       "sentiment": "Positive",
       "research_activity": "Stable",
-      "risk_level": "Low",
-      "trending": false,
-      "overview": "An analog of tuftsin discussed primarily in anxiolytic and cognitive-tone contexts; sleep claims are secondary.",
+      "risk_level": "Uncertain",
+      "trending": true,
+      "overview": "DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring neuropeptide that was first isolated from the cerebral venous blood of rabbits subjected to electrically induced sleep. It has been studied since the 1980s for its potential role in promoting delta-wave sleep and modulating sleep architecture. The information landscape shows an active convergence of decades-old research findings and a recent surge in biohacker community discussion.",
       "research_themes": [
-        "Anxiolytic-mechanism research",
-        "Russian-origin clinical literature"
+        "Sleep architecture modulation — delta-wave and REM promotion (research-backed, early studies)",
+        "Sleep latency and efficiency in chronic insomnia contexts (research-backed, limited human trials)",
+        "Neurotransmitter and neuropeptide signaling mechanisms (research-tier)",
+        "Blood-brain barrier crossing and delivery mechanisms (emerging research)",
+        "Stress and cortisol modulation as secondary theme (anecdotal/vendor)"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion: An analog of tuftsin discussed primarily in anxiolytic and cognitive-tone contexts; sleep claims are secondary.",
+        "summary": "Anecdotal public discussion across biohacker and sleep-focused subreddits is predominantly enthusiastic, with multiple users reporting substantial improvements in deep and REM sleep duration as measured by wearable devices. However, individual reports vary considerably and no controlled self-experimentation methodology is consistently applied.",
         "pros": [
-          "Subjective calm and sleep onset reports"
+          "Multiple users report noticeable increases in deep and REM sleep duration",
+          "Reports of improved subjective morning alertness and feeling rested",
+          "Perceived benefit during high-stress or caloric-deficit periods affecting sleep quality",
+          "Described as producing rapid, same-night effects by several users"
         ],
         "concerns": [
-          "Russian-origin trials less familiar to Western audiences"
+          "Dosing inconsistency noted across community — wide variation in amounts discussed",
+          "Uncertainty about whether improvements are sustained or acute",
+          "Some users report no noticeable effect, raising questions about individual variability",
+          "Sourcing quality concerns referenced in adjacent discussions"
         ],
         "common_questions": [
-          "What does the strongest research on Selank actually show?",
-          "How is Selank sourced and what quality concerns exist?",
-          "How does Selank compare with adjacent compounds?"
+          "What is the optimal dose for sleep improvement?",
+          "How does DSIP compare to Epitalon for staying asleep versus falling asleep?",
+          "Does DSIP work consistently across multiple nights or primarily on first use?",
+          "What delivery method (subcutaneous vs. other) is most discussed in the community?"
         ]
       },
       "market_snapshot": {
-        "price_range": "$40–$160 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "High",
-        "telehealth_visibility": "Medium"
+        "price_range": "Not specified in supplied data",
+        "availability": "Widely available through online peptide research vendors",
+        "market_activity": "Active; frequently listed alongside other sleep-focused peptides",
+        "vendor_frequency": "Moderate-to-high vendor presence; often bundled with Selank",
+        "telehealth_visibility": "Low relative to other peptides; primarily research/vendor channel"
       },
       "claim_consensus": [
         {
-          "claim": "Anxiolytic effect",
-          "consensus": "Mixed"
+          "claim": "DSIP promotes delta-wave (deep) sleep",
+          "consensus": "Mixed",
+          "note": "Supported in early animal and limited human research; human trial data is dated and limited in scale"
         },
         {
-          "claim": "Direct sleep aid",
-          "consensus": "Weak"
+          "claim": "DSIP reduces sleep latency",
+          "consensus": "Mixed",
+          "note": "One 1992 study reported shorter sleep latency vs. placebo in chronic insomnia; not widely replicated"
+        },
+        {
+          "claim": "DSIP improves REM sleep duration",
+          "consensus": "Anecdotal",
+          "note": "Frequently reported in community discussion; not prominently established in supplied research literature"
+        },
+        {
+          "claim": "DSIP has neuroprotective properties",
+          "consensus": "Weak",
+          "note": "Mentioned by vendors as an ongoing research area; not substantiated by supplied research sources"
+        },
+        {
+          "claim": "DSIP modulates stress and cortisol",
+          "consensus": "Anecdotal",
+          "note": "Appears in community posts and vendor copy; not supported by supplied research data"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "'Sleep aid' framing",
-          "research": "Primary research is anxiolytic.",
-          "marketing": "Some vendor pages frame it primarily as a sleep aid."
+          "topic": "Magnitude of sleep improvement",
+          "research": "A 1992 human study noted higher sleep efficiency and shorter latency vs. placebo, but effects were measured clinically in insomnia patients under controlled conditions",
+          "marketing": "Vendor content describes DSIP as promoting 'deep restorative sleep by enhancing delta wave activity' without qualifying the limited and dated nature of the human evidence base",
+          "note": "Vendor framing presents research findings with higher certainty than the underlying literature supports"
+        },
+        {
+          "topic": "Cognitive and neuroprotective benefits",
+          "research": "Supplied research sources do not substantiate broad cognitive or neuroprotective claims for DSIP in humans",
+          "marketing": "Vendor content lists 'Neuroprotective & Cognitive Benefits' and 'cognitive function' as areas of ongoing research, implying established benefit",
+          "note": "This represents a tier gap between what research currently shows and what vendor content asserts"
         }
       ],
       "risk_flags": [
         {
-          "label": "Indirect sleep mechanism",
-          "detail": "Sleep effects are typically downstream of anxiolytic effects.",
+          "label": "Limited modern human trial data",
+          "detail": "The most-cited human clinical research on DSIP dates to the early 1980s–1990s, and the information landscape does not reflect large-scale modern randomized controlled trials.",
+          "severity": "watch"
+        },
+        {
+          "label": "Dosing variability in public discussion",
+          "detail": "Community posts reference a wide range of dosing amounts (e.g., 300 mcg to 400 mcg and beyond) with no standardized protocol, reflecting the absence of established human dosing guidance.",
+          "severity": "concern"
+        },
+        {
+          "label": "Unverified sourcing quality",
+          "detail": "Discussion threads reference concerns about peptide degradation and sourcing reliability, which may affect both safety and the validity of self-reported effects.",
+          "severity": "watch"
+        },
+        {
+          "label": "Self-measurement methodology",
+          "detail": "Community reports rely on consumer wearable devices to measure sleep architecture changes; the accuracy of such devices for clinical-grade delta-wave measurement is not established.",
           "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Selank — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Selank",
+          "title": "Effects of delta sleep-inducing peptide on sleep of chronic insomnia patients",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1299794/",
           "tier": "research",
-          "snippet": "Published literature search."
+          "snippet": "1992 human study reporting higher sleep efficiency and shorter sleep latency with DSIP vs. placebo"
         },
         {
-          "title": "r/Peptides — Selank discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=Selank",
-          "tier": "anecdotal"
+          "title": "Effects of DSIP in man: Multifunctional psychophysiological activity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6689058/",
+          "tier": "research",
+          "snippet": "1983 study confirming neuropeptide nature of DSIP and species-specific sleep promotion in animal models"
         },
         {
-          "title": "Peptide vendor Selank listing",
-          "url": "https://example-vendor.com/selank",
-          "tier": "vendor"
+          "title": "Delta Sleep-Inducing Peptide — an overview (ScienceDirect)",
+          "url": "https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/delta-sleep-inducing-peptide",
+          "tier": "research",
+          "snippet": "Overview of DSIP discovery and foundational neuropeptide characterization"
         },
         {
-          "title": "Recovery-clinic Selank page",
-          "url": "https://example-telehealth.com/selank",
-          "tier": "telehealth"
+          "title": "Pichia pastoris secreted peptides crossing the blood-brain barrier (Frontiers in Pharmacology, 2024)",
+          "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1439536/full",
+          "tier": "research",
+          "snippet": "2024 study exploring DSIP delivery mechanisms and sleep-promoting effects on neurotransmitter levels"
+        },
+        {
+          "title": "r/Biohackers — DSIP GREATLY Improved Sleep (DEEP and REM)",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1qab419/dsip_greatly_improved_sleep_deep_and_rem/",
+          "tier": "anecdotal",
+          "snippet": "User report of ~40-minute increases in deep and REM sleep measured by wearable after single DSIP use"
+        },
+        {
+          "title": "r/sleep — Jumped from 300 mcg to 400 mcg DSIP last night",
+          "url": "https://www.reddit.com/r/sleep/comments/1sxdxl9/jumped_from_300_mcg_to_400_mcg_dsip_last_night/",
+          "tier": "anecdotal",
+          "snippet": "User anecdote describing dose escalation and subjective improvement in sleep depth and morning alertness"
+        },
+        {
+          "title": "DSIP (Delta Sleep Inducing Peptide) — Phoenix Peptide (vendor)",
+          "url": "https://phoenixpeptide.com/topics/dsip/",
+          "tier": "vendor",
+          "snippet": "Vendor overview claiming neuroprotective and cognitive benefits alongside sleep research context"
+        }
+      ]
+    },
+    {
+      "name": "Selank",
+      "aka": [
+        "TP-7",
+        "Selanke"
+      ],
+      "signal_strength": "High",
+      "discussion_velocity": "+82%",
+      "velocity_pct": 82,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
+      "research_activity": "Stable",
+      "risk_level": "Moderate",
+      "trending": true,
+      "overview": "Selank is a synthetic heptapeptide analogue of the endogenous tetrapeptide tuftsin, developed in Russia and studied primarily for anxiolytic and nootropic properties. Within the sleep research category, it appears primarily in the information landscape as an adjunct — marketed in combination with DSIP for sleep, and discussed in community forums mainly in the context of anxiety reduction, which is noted as indirectly beneficial to sleep quality. Published research focuses on neurotransmitter gene expression and anxiolytic effects rather than sleep architecture directly.",
+      "research_themes": [
+        "Anxiolytic activity and GABAergic/serotonergic modulation (research-backed)",
+        "Gene expression changes related to neurotransmission (research-backed — Volkova 2016)",
+        "BDNF modulation and neuroprotective potential (research-backed, limited)",
+        "Interaction with benzodiazepines in anxiety reduction (research-backed — Kasian 2017)",
+        "Indirect sleep benefit via anxiety and stress reduction (anecdotal/vendor)"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion about Selank is heavily positive, with the dominant theme being anxiety and social anxiety relief rather than direct sleep improvement. Users frequently describe improved focus, reduced mental noise, and calmer baseline states that they associate with better sleep quality indirectly.",
+        "pros": [
+          "Widely reported reduction in social anxiety and generalized anxiety symptoms",
+          "Reports of improved mental clarity and reduced brain fog",
+          "Described as calming without sedation by multiple users",
+          "Community mentions of improved sleep as a secondary benefit of reduced anxiety",
+          "Reported benefit for individuals with ADHD and high-functioning autism in social contexts"
+        ],
+        "concerns": [
+          "Some users question whether calming effects indicate genuine anxiolysis or nonspecific sedation",
+          "Cycling and tolerance questions are common, with no clear community consensus",
+          "Nasal spray availability raises questions about dosing accuracy across different products",
+          "Limited community discussion of long-term use outcomes"
+        ],
+        "common_questions": [
+          "Does Selank reduce anxiety or just cause tiredness/sedation?",
+          "What is the appropriate cycling protocol to avoid tolerance?",
+          "How does Selank compare to or stack with Semax for anxiety and focus?",
+          "Is the sleep benefit from Selank direct or purely secondary to anxiety reduction?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "Not specified in supplied data",
+        "availability": "Available through peptide vendors and some telehealth-adjacent clinics; nasal spray format widely discussed",
+        "market_activity": "Active; frequently co-marketed with Semax and DSIP",
+        "vendor_frequency": "High; appears in both standalone and combination product listings",
+        "telehealth_visibility": "Moderate; appears in telehealth-adjacent blog content and clinic websites"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Selank has anxiolytic properties",
+          "consensus": "Mixed",
+          "note": "Supported by published research in animal models and limited human data; community reports are highly consistent but anecdotal"
+        },
+        {
+          "claim": "Selank modulates GABA, serotonin, and dopamine systems",
+          "consensus": "Mixed",
+          "note": "Research supports gene expression changes in neurotransmission; direct receptor-level claims require caution"
+        },
+        {
+          "claim": "Selank improves sleep quality",
+          "consensus": "Anecdotal",
+          "note": "Not a primary finding in supplied research; appears in vendor content and community discussion as secondary to anxiety relief"
+        },
+        {
+          "claim": "Selank enhances BDNF and provides neuroprotection",
+          "consensus": "Weak",
+          "note": "Referenced in vendor content and some research context; not robustly established in human clinical literature"
+        },
+        {
+          "claim": "Selank is effective without dependence risk",
+          "consensus": "Weak",
+          "note": "Claimed in vendor and community content; long-term human safety data is not well-represented in supplied sources"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Direct sleep benefit vs. indirect anxiolytic effect",
+          "research": "Supplied research literature focuses on anxiolytic mechanisms and neurotransmitter gene expression; no supplied research directly establishes Selank as a sleep-promoting agent",
+          "marketing": "Vendor content (e.g., DSIP/Selank blend page) markets Selank as directly promoting 'deep restorative sleep' in combination products, conflating its anxiolytic profile with primary sleep efficacy",
+          "note": "This represents a meaningful claim elevation in vendor framing relative to what the research record in supplied data supports"
+        },
+        {
+          "topic": "Sedation vs. true anxiolysis",
+          "research": "Research (Kasian 2017) positions Selank as reducing elevated anxiety levels, suggesting a targeted anxiolytic rather than general sedative action",
+          "marketing": "Community discussion surfaces a recurring debate about whether Selank's calming effect is genuine anxiolysis or nonspecific sedation, a tension not resolved in vendor content",
+          "note": "A r/Biohackers thread directly asks 'Does Selank actually reduce anxiety or just make you tired?' — reflecting unresolved public uncertainty"
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "Regulatory and approval status ambiguity",
+          "detail": "Selank is approved in Russia as a medication but lacks regulatory approval in most Western jurisdictions; vendor and telehealth content does not consistently clarify this distinction.",
+          "severity": "watch"
+        },
+        {
+          "label": "Cycling and tolerance uncertainty",
+          "detail": "Community posts frequently request cycling guidance, indicating that tolerance dynamics are not well understood and no evidence-based protocol exists in the public domain.",
+          "severity": "watch"
+        },
+        {
+          "label": "Dosing accuracy with nasal spray format",
+          "detail": "Discussion of nasal spray products raises questions about dose consistency, as spray-based delivery may produce variable absorption compared to more controlled research administration methods.",
+          "severity": "info"
+        },
+        {
+          "label": "Limited long-term human safety data",
+          "detail": "The supplied research base does not include long-term human safety studies; vendor and community content does not adequately flag this evidence gap.",
+          "severity": "concern"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Selank Administration Affects the Expression of Some Genes Involved in GABAergic Neurotransmission (PMC, 2016)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4757669/",
+          "tier": "research",
+          "snippet": "Volkova et al. 2016 study showing Selank alters expression of genes involved in neurotransmission"
+        },
+        {
+          "title": "Peptide Selank Enhances the Effect of Diazepam in Reducing Anxiety (PMC, 2017)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5322660/",
+          "tier": "research",
+          "snippet": "Kasian et al. 2017 study finding Selank effective in reducing elevated anxiety, enhanced by diazepam combination"
+        },
+        {
+          "title": "r/Biohackers — Does Selank actually reduce anxiety or just make you tired?",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1sgzv50/does_selank_actually_reduce_anxiety_or_just_make/",
+          "tier": "anecdotal",
+          "snippet": "Community debate on whether Selank's mechanism is true anxiolysis or nonspecific sedation"
+        },
+        {
+          "title": "r/NooTopics — Selank may be a lifesaver. Cycling advice?",
+          "url": "https://www.reddit.com/r/NooTopics/comments/1pxn5w4/selank_may_be_a_lifesaver_cycling_advice/",
+          "tier": "anecdotal",
+          "snippet": "User report of significant social anxiety relief and request for cycling protocol guidance"
+        },
+        {
+          "title": "DSIP/SELANK BLEND — Beverly Hills Rejuvenation Center (vendor)",
+          "url": "https://www.bhrcenter.com/peptides/dsip-selank-blend/?srsltid=AfmBOoo-7UnutEcyE3zbRz7j67-JW8daO-zbptS288ALMs78sHRfw7v6",
+          "tier": "vendor",
+          "snippet": "Vendor marketing a combined DSIP/Selank product, framing Selank as directly sleep-promoting"
+        },
+        {
+          "title": "Targeting Brain Fog and Anxiety with Selank and Semax Peptides (vendor)",
+          "url": "https://agerejuvenation.com/blog/targeting-brain-fog-and-anxiety-with-selank-and-semax-peptides",
+          "tier": "vendor",
+          "snippet": "Vendor blog describing Selank's influence on GABA, serotonin, and dopamine systems"
+        },
+        {
+          "title": "r/PeptidePathways — Selank is a game changer for social anxiety",
+          "url": "https://www.reddit.com/r/PeptidePathways/comments/1s18k4c/selank_is_a_game_changer_for_social_anxiety/",
+          "tier": "anecdotal",
+          "snippet": "User with high-functioning autism reports calming and social anxiety relief from nasal spray Selank"
         }
       ]
     },
     {
       "name": "Epitalon",
+      "aka": [
+        "Epithalon",
+        "Epithalamin tetrapeptide",
+        "Ala-Glu-Asp-Gly"
+      ],
       "signal_strength": "Medium",
-      "discussion_velocity": "+56%",
-      "velocity_pct": 56,
+      "discussion_velocity": "+44%",
+      "velocity_pct": 44,
       "consensus_score": "Weak",
-      "sentiment": "Cautious",
-      "research_activity": "Stable",
+      "sentiment": "Mixed",
+      "research_activity": "Accelerating",
       "risk_level": "Uncertain",
-      "trending": false,
-      "overview": "Discussed in pineal-function and sleep-onset contexts; independent peer-reviewed evidence is limited.",
+      "trending": true,
+      "overview": "Epitalon is a synthetic tetrapeptide derived from the pineal gland peptide epithalamin, investigated primarily in the context of aging, telomerase activation, and circadian rhythm regulation. Within the sleep information landscape, it is discussed for its purported role in stimulating melatonin production and restoring pineal gland function, particularly in aged populations. The research base, while growing, is largely preclinical or derived from older Russian studies, and community discussion reflects significant uncertainty about real-world sleep effects.",
       "research_themes": [
-        "Pineal-function discussion",
-        "Long cycle culture in vendor messaging"
+        "Telomerase activation and telomere elongation (research-backed — Araj 2025 review)",
+        "Melatonin production and pineal gland restoration in aging (research-backed — Goncharova 2005)",
+        "Circadian rhythm regulation via pineal peptide activity (research-backed, limited human data)",
+        "Anti-aging and longevity mechanisms (research-backed, primarily preclinical/animal)",
+        "Sleep quality improvement via melatonin pathway (anecdotal/vendor extrapolation)"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion: Discussed in pineal-function and sleep-onset contexts; independent peer-reviewed evidence is limited.",
+        "summary": "Anecdotal public discussion about Epitalon for sleep is notably divided; some users express enthusiasm based on perceived benefits, while others report no observable sleep improvement despite completing full dosing protocols. The community debate centers heavily on which dosing protocol is legitimate, reflecting a fragmented and uncertain information environment.",
         "pros": [
-          "Subjective sleep onset reports"
+          "Some users report improved sleep quality attributed to Epitalon use",
+          "Interest in potential long-term circadian and melatonin-related benefits",
+          "Discussed as part of broader longevity-oriented peptide stacks with sleep as a secondary benefit",
+          "Perceived low short-term side effect profile noted by several users"
         ],
         "concerns": [
-          "Independent replication limited"
+          "Several users report no sleep improvement after completing standard dosing protocols",
+          "Significant community confusion about correct dosing amounts and cycle lengths",
+          "Skepticism expressed about vendor-amplified benefit claims and affiliate-linked content",
+          "Questions about whether benefits require long-term or repeated cycles rather than single use"
         ],
         "common_questions": [
-          "What does the strongest research on Epitalon actually show?",
-          "How is Epitalon sourced and what quality concerns exist?",
-          "How does Epitalon compare with adjacent compounds?"
+          "Does Epitalon actually improve sleep, or is this largely marketing?",
+          "What is the correct dosing protocol — 10mg/10 days vs. lower doses?",
+          "How does Epitalon compare to DSIP for staying asleep?",
+          "Are sleep benefits from Epitalon acute or do they emerge over longer cycles?"
         ]
       },
       "market_snapshot": {
-        "price_range": "$40–$160 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "High",
-        "telehealth_visibility": "Medium"
+        "price_range": "Not specified in supplied data",
+        "availability": "Available through online peptide research vendors; protocols widely discussed online",
+        "market_activity": "Moderate-to-active; strong longevity and anti-aging market positioning",
+        "vendor_frequency": "High; featured prominently in longevity and anti-aging vendor content",
+        "telehealth_visibility": "Moderate; referenced in clinic-adjacent content for longevity protocols"
       },
       "claim_consensus": [
         {
-          "claim": "Sleep-onset improvement",
-          "consensus": "Anecdotal"
+          "claim": "Epitalon increases melatonin production in aged subjects",
+          "consensus": "Mixed",
+          "note": "Supported by a 2005 study in aged monkeys showing increased nocturnal melatonin; human data is limited"
         },
         {
-          "claim": "Pineal-function modulation",
-          "consensus": "Weak"
+          "claim": "Epitalon activates telomerase and extends telomeres",
+          "consensus": "Mixed",
+          "note": "Supported in preclinical literature reviewed by Araj 2025; clinical significance in humans not established"
+        },
+        {
+          "claim": "Epitalon improves sleep quality",
+          "consensus": "Anecdotal",
+          "note": "Frequently claimed by vendors and some users; community reports are inconsistent and supplied research does not directly confirm this in humans"
+        },
+        {
+          "claim": "Epitalon restores circadian rhythm regulation",
+          "consensus": "Weak",
+          "note": "Plausible mechanistic argument via pineal/melatonin pathway; not directly demonstrated in controlled human sleep studies in supplied data"
+        },
+        {
+          "claim": "Epitalon is safe for long-term or repeated use",
+          "consensus": "Weak",
+          "note": "Referenced in vendor content citing an observational study in elderly subjects; independent replication and safety characterization are limited"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "Sleep efficacy",
-          "research": "Limited independent evidence.",
-          "marketing": "Vendor pages frame it as a reliable sleep aid."
+          "topic": "Sleep improvement certainty",
+          "research": "Supplied research (Goncharova 2005) demonstrates increased nocturnal melatonin in aged monkeys following Epitalon administration, suggesting a mechanistic basis for circadian effects; a 2025 review (Araj) evaluates the broader evidence base but does not confirm sleep efficacy in human clinical trials",
+          "marketing": "Vendor content states Epitalon 'improves melatonin production, leading to better sleep quality' and 'enhances circadian rhythm regulation' as established benefits, without qualifying that primary evidence is preclinical or from small, older studies",
+          "note": "The gap between mechanistic animal data and vendor claims of established human sleep benefit is a primary tension in the Epitalon information landscape"
+        },
+        {
+          "topic": "Dosing protocol validity",
+          "research": "Supplied research does not provide a validated human dosing protocol; no consensus dosing regimen appears in the research literature included in the data",
+          "marketing": "Community and vendor content circulates multiple competing protocols (e.g., 10mg/10 days, lower micro-dose variants) with strong assertions of correctness, but these are not grounded in peer-reviewed human dose-finding studies",
+          "note": "Community posts explicitly flag confusion about protocol origins, with some suggesting widely cited protocols are mis-translated or misattributed"
         }
       ],
       "risk_flags": [
         {
-          "label": "Replication gap",
-          "detail": "Most research from a narrow cluster.",
+          "label": "Evidence base primarily preclinical",
+          "detail": "The majority of mechanistic evidence for Epitalon's sleep-related effects derives from animal studies and older Russian-language research; large-scale human clinical trials are not represented in the supplied data.",
           "severity": "watch"
+        },
+        {
+          "label": "Protocol confusion and dosing uncertainty",
+          "detail": "Community posts explicitly describe uncertainty about whether widely circulated dosing protocols are correctly sourced, raising risks of inappropriate self-experimentation.",
+          "severity": "concern"
+        },
+        {
+          "label": "Affiliate and marketing influence on information quality",
+          "detail": "Community members themselves flag the prevalence of affiliate-linked content about Epitalon, which may distort perceived consensus around its benefits.",
+          "severity": "watch"
+        },
+        {
+          "label": "Unverified long-term human safety profile",
+          "detail": "Long-term safety data in humans is limited; the most-cited longevity study involved annual cycles in elderly subjects and lacks independent replication in supplied sources.",
+          "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Epitalon — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Epitalon",
+          "title": "Overview of Epitalon — Highly Bioactive Pineal Tetrapeptide (PMC, 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/",
           "tier": "research",
-          "snippet": "Published literature search."
+          "snippet": "Araj 2025 critical evaluation of published Epitalon data across in silico, in vitro, and in vivo experimental types"
         },
         {
-          "title": "r/Peptides — Epitalon discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=Epitalon",
-          "tier": "anecdotal"
+          "title": "Pineal peptides restore the age-related disturbances in hormonal functions (ScienceDirect, 2005)",
+          "url": "https://www.sciencedirect.com/article/abs/pii/S0531556504003171",
+          "tier": "research",
+          "snippet": "Goncharova 2005 study showing Epitalon increased basal nocturnal melatonin levels in aged monkeys"
         },
         {
-          "title": "Peptide vendor Epitalon listing",
-          "url": "https://example-vendor.com/epitalon",
-          "tier": "vendor"
+          "title": "r/Biohackers — Epitalon: snake oil or legit?",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1sja2ji/epitalon_snake_oil_or_legit/",
+          "tier": "anecdotal",
+          "snippet": "Community discussion questioning real-world sleep and anti-aging benefits versus marketing-driven claims"
         },
         {
-          "title": "Recovery-clinic Epitalon page",
-          "url": "https://example-telehealth.com/epitalon",
-          "tier": "telehealth"
+          "title": "r/BodyHackGuide — Epitalon Journey (so far)",
+          "url": "https://www.reddit.com/r/BodyHackGuide/comments/1pal5of/epitalon_journey_so_far/",
+          "tier": "anecdotal",
+          "snippet": "User reports no sleep improvement after completing a 9-day protocol, raising questions about dosing adequacy"
+        },
+        {
+          "title": "r/Peptidesource — Epitalon Protocol",
+          "url": "https://www.reddit.com/r/Peptidesource/comments/1n81386/epitalon_protocol/",
+          "tier": "anecdotal",
+          "snippet": "Community thread exposing confusion and contradictions in circulated Epitalon dosing protocols"
+        },
+        {
+          "title": "Epitalon: The Longevity Peptide Linked to Telomere Protection and Better Sleep (vendor)",
+          "url": "https://pulseandremedy.com/uncategorized/epitalon-the-longevity-peptide-linked-to-telomere-protection-and-better-sleep/",
+          "tier": "vendor",
+          "snippet": "Vendor content asserting Epitalon improves sleep quality and circadian rhythm regulation as established benefits"
+        },
+        {
+          "title": "Epitalon: What can this peptide do for telomere protection (vendor)",
+          "url": "https://www.gethealthspan.com/research/article/epitalon?srsltid=AfmBOoqnjwnE4ohmV4gHhz8ocO7Fa5jUNX9VWyJpE",
+          "tier": "vendor",
+          "snippet": "Vendor article describing Epitalon's claimed effects on melatonin production and pineal tissue protection"
         }
       ]
     }
