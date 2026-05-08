@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="640" height="128" role="img" aria-label="PeptSight wordmark">
+  <title>PeptSight</title>
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#0f1014"/>
+  <g transform="translate(20 20)">
+    <path
+      d="M5 7c2-3 6-3 8 0 2 3 0 6-3 8-3 2-7 0-7-4 0-2 1-3 2-4z"
+      stroke="#22d3ee"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <circle cx="16.5" cy="14" r="1.5" fill="#22d3ee" />
+    <circle cx="11" cy="9.5" r="1.2" fill="#22d3ee" fill-opacity="0.6" />
+  </g>
+  <text
+    x="84"
+    y="42"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif"
+    font-size="30"
+    font-weight="600"
+    letter-spacing="-0.5"
+  >
+    <tspan fill="#f4f4f5">Pept</tspan><tspan fill="#22d3ee">Sight</tspan>
+  </text>
+</svg>

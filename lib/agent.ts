@@ -3,6 +3,17 @@ import { CATEGORY_BY_SLUG } from "./peptides";
 import { apifyAvailable, scrapeReddit, scrapeSearch, type RedditPost, type SearchHit } from "./apify";
 import { llmAvailable, synthesizeReport } from "./llm";
 import { getFallbackReport } from "./fallback";
+import { readCachedReport, writeCachedReport } from "./cache";
+
+// In-memory cache for fast repeated reads within a single Node process.
+// Persistent (cross-deploy) caching is handled by lib/cache.ts (JSON files
+// in public/data/ produced by scripts/refresh.ts on a 6h cron).
+const CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes
+const reportCache = new Map<CategorySlug, { at: number; report: IntelReport }>();
+
+export interface PipelineOptions {
+  forceRefresh?: boolean;
+}
 
 type DistributiveOmit<T, K extends keyof any> = T extends any ? Omit<T, K> : never;
 type Emit = (event: DistributiveOmit<AgentEvent, "ts">) => void;
@@ -16,11 +27,29 @@ function pause(ms: number): Promise<void> {
 export async function runIntelligencePipeline(
   category: CategorySlug,
   rawEmit: (e: AgentEvent) => void,
+  options: PipelineOptions = {},
 ): Promise<void> {
   const emit: Emit = (e) => rawEmit({ ...(e as AgentEvent), ts: Date.now() });
   const cat = CATEGORY_BY_SLUG[category];
 
   const liveMode = apifyAvailable() && llmAvailable();
+
+  // Cache layer (skipped on forceRefresh):
+  //   1. In-memory Map  — fastest, per-process
+  //   2. JSON file       — persistent, populated by 6h cron job
+  //   3. Live pipeline   — only on first cold load before cron has run
+  if (!options.forceRefresh) {
+    const memCached = reportCache.get(category);
+    if (memCached && Date.now() - memCached.at < CACHE_TTL_MS) {
+      return replayCachedReport(memCached.report, cat, emit, liveMode, "memory");
+    }
+    const fileCached = await readCachedReport(category);
+    if (fileCached) {
+      reportCache.set(category, { at: Date.now(), report: fileCached });
+      return replayCachedReport(fileCached, cat, emit, liveMode, "file");
+    }
+  }
+
   emit({
     type: "mode",
     mode: liveMode ? "live" : "demo",
@@ -58,7 +87,7 @@ export async function runIntelligencePipeline(
 
       emit({ type: "tool_call", tool: "apify:reddit-scraper", input: redditQuery });
       const tStart = Date.now();
-      const redditPosts = await scrapeReddit(redditQuery, 10);
+      const redditPosts = await scrapeReddit(redditQuery, 6);
       emit({
         type: "tool_result",
         tool: "apify:reddit-scraper",
@@ -69,7 +98,7 @@ export async function runIntelligencePipeline(
 
       emit({ type: "tool_call", tool: "apify:search-scraper", input: searchQuery });
       const sStart = Date.now();
-      const searchHits = await scrapeSearch(searchQuery, 8);
+      const searchHits = await scrapeSearch(searchQuery, 6);
       emit({
         type: "tool_result",
         tool: "apify:search-scraper",
@@ -148,8 +177,58 @@ export async function runIntelligencePipeline(
   emit({ type: "status", phase: "finalize", message: "Finalizing intelligence report…" });
   await pause(200);
 
+  // Cache successful reports so subsequent reads are instant. The JSON file
+  // write is best-effort and silent — the cron job is the canonical writer.
+  reportCache.set(category, { at: Date.now(), report });
+  if (liveMode && report.mode === "live") {
+    writeCachedReport(category, report).catch(() => {});
+  }
+
   emit({ type: "result", data: report });
   emit({ type: "done" });
+}
+
+type CategoryDef = (typeof CATEGORY_BY_SLUG)[CategorySlug];
+
+async function replayCachedReport(
+  report: IntelReport,
+  cat: CategoryDef,
+  emit: Emit,
+  liveMode: boolean,
+  source: "memory" | "file" = "memory",
+): Promise<void> {
+  emit({
+    type: "mode",
+    mode: report.mode,
+    reason: `Cached intelligence — ${source === "file" ? "from scheduled refresh, " : ""}generated ${ageOf(report.generated_at)} ago${liveMode ? " (live)" : ""}`,
+  });
+  emit({ type: "status", phase: "interpret", message: `Interpreting research category: ${cat.label}…` });
+  await pause(120);
+  emit({ type: "status", phase: "identify", message: "Identifying associated peptides…" });
+  await pause(120);
+  emit({ type: "peptides_identified", peptides: report.peptides.map((p) => p.name) });
+  emit({ type: "status", phase: "scrape", message: "Loading cached intelligence from this session…" });
+  await pause(140);
+  for (const p of report.peptides) {
+    emit({
+      type: "tool_result",
+      tool: "cache:report",
+      summary: `${p.name} — cached`,
+      count: p.sources.length,
+      durationMs: 0,
+    });
+    await pause(50);
+  }
+  emit({ type: "status", phase: "synthesize", message: "Replaying synthesized report…" });
+  await pause(160);
+  emit({ type: "result", data: report });
+  emit({ type: "done" });
+}
+
+function ageOf(iso: string): string {
+  const diff = Date.now() - new Date(iso).getTime();
+  if (diff < 60_000) return `${Math.floor(diff / 1000)}s`;
+  return `${Math.floor(diff / 60_000)}m`;
 }
 
 export async function getDetailedPeptide(category: CategorySlug, peptideName: string): Promise<IntelReport> {

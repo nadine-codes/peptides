@@ -20,7 +20,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 grid-bg opacity-90" />
       <div className="absolute inset-x-0 top-0 -z-10 h-[420px] bg-radial-spot" />
 
-      <div className="mx-auto max-w-5xl px-6 pt-20 pb-14 md:pt-28">
+      <div className="mx-auto max-w-7xl px-6 pt-20 pb-14 md:pt-28">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}

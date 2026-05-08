@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { AgentActivity } from "@/components/AgentActivity";
 import { PeptideCard } from "@/components/PeptideCard";
+import { RefreshOverlay } from "@/components/RefreshOverlay";
 import type { AgentEvent, CategorySlug, IntelReport } from "@/lib/types";
 
 interface ReportClientProps {
@@ -19,14 +20,33 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
   const [done, setDone] = useState(false);
   const [mode, setMode] = useState<"live" | "demo" | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshEvents, setRefreshEvents] = useState<AgentEvent[]>([]);
+  const [refreshDone, setRefreshDone] = useState(false);
+  const inFlightRef = useRef<AbortController | null>(null);
 
-  useEffect(() => {
-    let cancelled = false;
-    const ctrl = new AbortController();
+  const runStream = useCallback(
+    async (opts: { force: boolean }) => {
+      // Cancel any in-flight stream first
+      if (inFlightRef.current) inFlightRef.current.abort();
+      const ctrl = new AbortController();
+      inFlightRef.current = ctrl;
 
-    (async () => {
+      const isRefresh = opts.force;
+      let cancelled = false;
+
+      if (isRefresh) {
+        setRefreshing(true);
+        setRefreshEvents([]);
+        setRefreshDone(false);
+      } else {
+        setEvents([]);
+        setDone(false);
+      }
+
       try {
-        const res = await fetch("/api/intelligence", {
+        const url = isRefresh ? "/api/intelligence?refresh=true" : "/api/intelligence";
+        const res = await fetch(url, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ category }),
@@ -52,7 +72,11 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
             try {
               const evt = JSON.parse(json) as AgentEvent;
               if (cancelled) return;
-              setEvents((prev) => [...prev, evt]);
+              if (isRefresh) {
+                setRefreshEvents((prev) => [...prev, evt]);
+              } else {
+                setEvents((prev) => [...prev, evt]);
+              }
               if (evt.type === "mode") setMode(evt.mode);
               if (evt.type === "result") {
                 setReport(evt.data);
@@ -63,29 +87,71 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
                   );
                 } catch {}
               }
-              if (evt.type === "done") setDone(true);
+              if (evt.type === "done") {
+                if (isRefresh) setRefreshDone(true);
+                else setDone(true);
+              }
             } catch {
               // skip malformed line
             }
           }
         }
-        if (!cancelled) setDone(true);
+        if (!cancelled) {
+          if (isRefresh) setRefreshDone(true);
+          else setDone(true);
+        }
       } catch (e) {
         if (cancelled) return;
         if ((e as Error).name === "AbortError") return;
         setError((e as Error).message);
-        setDone(true);
+        if (isRefresh) setRefreshDone(true);
+        else setDone(true);
+      } finally {
+        if (inFlightRef.current === ctrl) inFlightRef.current = null;
       }
-    })();
 
+      return () => {
+        cancelled = true;
+      };
+    },
+    [category],
+  );
+
+  useEffect(() => {
+    const ctrl = new AbortController();
+    let cancelled = false;
+    (async () => {
+      if (cancelled) return;
+      await runStream({ force: false });
+    })();
     return () => {
       cancelled = true;
       ctrl.abort();
+      if (inFlightRef.current) inFlightRef.current.abort();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
+
+  const handleRefresh = useCallback(() => {
+    if (refreshing) return;
+    runStream({ force: true });
+  }, [refreshing, runStream]);
+
+  const handleCloseOverlay = useCallback(() => {
+    setRefreshing(false);
+  }, []);
+
+  const generatedLabel = report ? timeAgo(report.generated_at) : null;
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-10">
+      <RefreshOverlay
+        open={refreshing}
+        events={refreshEvents}
+        done={refreshDone}
+        onClose={handleCloseOverlay}
+      />
+
       <header className="mb-8">
         <Link
           href="/"
@@ -104,9 +170,15 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
             </h1>
             <p className="mt-2 max-w-2xl text-sm text-ink-secondary">{blurb}</p>
           </div>
-          <div className="flex flex-col items-end gap-1.5 text-2xs font-mono uppercase tracking-[0.18em] text-ink-muted">
-            <span>{events.length} agent events</span>
-            {report ? <span>generated {timeAgo(report.generated_at)}</span> : null}
+          <div className="flex flex-col items-end gap-3">
+            <RefreshButton
+              onClick={handleRefresh}
+              disabled={refreshing || !report}
+              generatedLabel={generatedLabel}
+            />
+            <div className="text-right text-2xs font-mono uppercase tracking-[0.18em] text-ink-muted">
+              {events.length} agent events
+            </div>
           </div>
         </div>
       </header>
@@ -127,6 +199,7 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
           )}
           {report && (
             <motion.div
+              key={report.generated_at}
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -144,6 +217,44 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
         </div>
       </div>
     </div>
+  );
+}
+
+function RefreshButton({
+  onClick,
+  disabled,
+  generatedLabel,
+}: {
+  onClick: () => void;
+  disabled: boolean;
+  generatedLabel: string | null;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className="group inline-flex items-center gap-2 rounded-lg border border-line-strong bg-bg-surface px-3.5 py-2 text-sm text-ink-primary transition hover:border-signal-cyan/60 hover:text-signal-cyan disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      <RefreshIcon />
+      <span className="font-medium">Refresh data</span>
+      {generatedLabel ? (
+        <span className="font-mono text-2xs uppercase tracking-[0.16em] text-ink-muted group-hover:text-signal-cyan/70">
+          · updated {generatedLabel}
+        </span>
+      ) : null}
+    </button>
+  );
+}
+
+function RefreshIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.7">
+      <path d="M3 12a9 9 0 0 1 15.5-6.3L21 8" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 3v5h-5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 12a9 9 0 0 1-15.5 6.3L3 16" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3 21v-5h5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
@@ -173,5 +284,6 @@ function timeAgo(iso: string): string {
   const diff = Date.now() - d.getTime();
   if (diff < 60_000) return "just now";
   if (diff < 3_600_000) return `${Math.floor(diff / 60_000)}m ago`;
+  if (diff < 86_400_000) return `${Math.floor(diff / 3_600_000)}h ago`;
   return d.toLocaleString();
 }

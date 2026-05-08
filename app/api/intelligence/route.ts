@@ -20,6 +20,11 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid category" }, { status: 400 });
   }
 
+  const url = new URL(req.url);
+  const forceRefresh =
+    url.searchParams.get("refresh") === "true" ||
+    Boolean((body as { refresh?: boolean })?.refresh);
+
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
     async start(controller) {
@@ -31,8 +36,16 @@ export async function POST(req: Request) {
         }
       };
 
+      // Heartbeat so reverse proxies (Cloudflare Tunnel, Vercel) don't kill the
+      // connection during the long Claude synthesis pause.
+      const heartbeat = setInterval(() => {
+        try {
+          controller.enqueue(encoder.encode(`: ping ${Date.now()}\n\n`));
+        } catch {}
+      }, 8000);
+
       try {
-        await runIntelligencePipeline(category, send);
+        await runIntelligencePipeline(category, send, { forceRefresh });
       } catch (err) {
         send({
           type: "error",
@@ -41,6 +54,7 @@ export async function POST(req: Request) {
           recoverable: false,
         });
       } finally {
+        clearInterval(heartbeat);
         try {
           controller.close();
         } catch {
