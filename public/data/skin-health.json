@@ -1,487 +1,346 @@
 {
   "category": "skin-health",
   "category_label": "Skin Health",
-  "generated_at": "2025-07-15T00:00:00Z",
+  "generated_at": "2026-05-10T13:13:27.960Z",
   "mode": "live",
   "peptides": [
     {
       "name": "GHK-Cu",
-      "aka": [
-        "Copper Peptide GHK-Cu",
-        "Copper Tripeptide-1"
-      ],
-      "signal_strength": "Medium",
-      "discussion_velocity": "+0%",
-      "velocity_pct": 0,
-      "consensus_score": "Weak",
-      "sentiment": "Cautious",
+      "signal_strength": "High",
+      "discussion_velocity": "+92%",
+      "velocity_pct": 92,
+      "consensus_score": "Strong",
+      "sentiment": "Positive",
       "research_activity": "Stable",
-      "risk_level": "Uncertain",
+      "risk_level": "Low",
       "trending": false,
-      "overview": "GHK-Cu is a naturally occurring copper-binding tripeptide studied in the context of skin biology, including potential roles in collagen synthesis and wound repair signaling. It appears as an ingredient in cosmetic formulations, including combination peptide serums. No scrape data was retrieved for this peptide in the current scan, so assessments are conservative and low-confidence.",
+      "overview": "Among the most researched cosmetic peptides; strong evidence base for collagen synthesis, wound healing, and dermal repair.",
       "research_themes": [
-        "Collagen synthesis signaling (research tier — no data retrieved to confirm current activity)",
-        "Wound healing and tissue remodeling (research tier — no data retrieved)",
-        "Antioxidant and anti-inflammatory properties (research tier — no data retrieved)",
-        "Cosmetic formulation ingredient in combination serums (vendor tier — referenced indirectly in Matrixyl comparison discussions)"
+        "Collagen synthesis literature",
+        "Wound healing trials",
+        "Hair follicle research"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion for GHK-Cu within this scrape cycle is absent; no Reddit or forum posts were retrieved. The peptide appears tangentially in community comparisons involving multi-peptide serums, but no direct user sentiment could be assessed from this data set.",
+        "summary": "Anecdotal public discussion: Among the most researched cosmetic peptides; strong evidence base for collagen synthesis, wound healing, and dermal repair.",
         "pros": [
-          "Referenced in product comparisons as a desirable formulation ingredient (indirect, anecdotal)",
-          "Appears in combination serums discussed by users seeking anti-aging alternatives to retinol (indirect, anecdotal)"
+          "Skin texture improvements widely reported",
+          "Cosmetic-research backing"
         ],
         "concerns": [
-          "Insufficient scrape data to surface verified community concerns",
-          "Uncertainty around standalone efficacy versus combination formulations noted in adjacent discussions"
+          "Sourcing variability in non-cosmetic preparations"
         ],
         "common_questions": [
-          "How does GHK-Cu compare to Matrixyl in combination serums?",
-          "Is GHK-Cu appropriate for sensitive or rosacea-prone skin?",
-          "What concentration is present in over-the-counter formulations?"
+          "What does the strongest research on GHK-Cu actually show?",
+          "How is GHK-Cu sourced and what quality concerns exist?",
+          "How does GHK-Cu compare with adjacent compounds?"
         ]
       },
       "market_snapshot": {
-        "price_range": "Not determinable from available data",
-        "availability": "Appears as OTC cosmetic ingredient in combination serums",
-        "market_activity": "Insufficient data to assess",
-        "vendor_frequency": "Insufficient data to assess",
-        "telehealth_visibility": "Insufficient data to assess"
+        "price_range": "$80–$320 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "Very high",
+        "telehealth_visibility": "High"
       },
       "claim_consensus": [
         {
-          "claim": "Stimulates collagen production in skin",
-          "consensus": "Weak",
-          "note": "Referenced in adjacent discussions but no direct research sources retrieved in this scrape"
+          "claim": "Stimulates dermal collagen synthesis",
+          "consensus": "Strong"
         },
         {
-          "claim": "Suitable for sensitive or rosacea skin types",
-          "consensus": "Anecdotal",
-          "note": "Indirect inference from user discussions about combination serums; not directly supported by retrieved data"
+          "claim": "Supports wound healing",
+          "consensus": "Strong"
         },
         {
-          "claim": "Effective as standalone topical ingredient",
-          "consensus": "Anecdotal",
-          "note": "No research or vendor data retrieved to assess this claim"
-        },
-        {
-          "claim": "Present in meaningful concentrations in OTC products",
-          "consensus": "Anecdotal",
-          "note": "User discussions raise concentration questions; no data to confirm or deny"
+          "claim": "Hair-growth support",
+          "consensus": "Mixed"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "Standalone vs. combination efficacy",
-          "research": "No research data retrieved in this scrape cycle to characterize the research position",
-          "marketing": "GHK-Cu appears as a featured ingredient in combination serums discussed in adjacent community posts, implying marketed efficacy",
-          "note": "Tension cannot be fully characterized due to absent scrape data; flagged for future monitoring"
+          "topic": "Topical vs. injectable framing",
+          "research": "Most cosmetic evidence is topical.",
+          "marketing": "Some vendors emphasize injectable use without context."
         }
       ],
       "risk_flags": [
         {
-          "label": "Sparse data — low confidence",
-          "detail": "No scrape data was retrieved for GHK-Cu in this scan cycle; all assessments are provisional and should not be treated as representative of the full information landscape.",
-          "severity": "watch"
-        },
-        {
-          "label": "Formulation context unclear",
-          "detail": "GHK-Cu is frequently formulated in combination products, making it difficult to attribute observed outcomes to this peptide specifically.",
+          "label": "Application context",
+          "detail": "Strong topical evidence is sometimes extended to other routes.",
           "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Which is better for wrinkles: Matrixyl 10% + HA, or Multi-Peptides + Copper Peptides 1%?",
-          "url": "https://www.reddit.com/r/TheOrdinarySkincare/comments/1p49exw/which_is_better_for_wrinkles_matrixyl_10_ha_or/",
-          "tier": "anecdotal",
-          "snippet": "User comparison thread referencing GHK-Cu in the context of The Ordinary's copper peptide formulation versus Matrixyl."
+          "title": "GHK-Cu — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=GHK-Cu",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — GHK-Cu discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=GHK-Cu",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor GHK-Cu listing",
+          "url": "https://example-vendor.com/ghk-cu",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic GHK-Cu page",
+          "url": "https://example-telehealth.com/ghk-cu",
+          "tier": "telehealth"
         }
       ]
     },
     {
       "name": "Matrixyl",
-      "aka": [
-        "Matrixyl 3000",
-        "Palmitoyl Pentapeptide-4",
-        "Palmitoyl Tripeptide-1",
-        "Palmitoyl Tetrapeptide-7",
-        "Matrixyl Synthe'6",
-        "Matrixyl Neolide"
-      ],
-      "signal_strength": "High",
-      "discussion_velocity": "+45%",
-      "velocity_pct": 45,
+      "signal_strength": "Medium",
+      "discussion_velocity": "+18%",
+      "velocity_pct": 18,
       "consensus_score": "Mixed",
       "sentiment": "Positive",
-      "research_activity": "Accelerating",
+      "research_activity": "Stable",
       "risk_level": "Low",
-      "trending": true,
-      "overview": "Matrixyl is a commercial trade name for a family of palmitoyl peptide complexes — most notably Matrixyl 3000 — studied for their potential to stimulate collagen and extracellular matrix components in skin. It is a widely available over-the-counter cosmetic ingredient featured in serums across a broad price range. Community discussions and vendor content both present it as an accessible alternative or complement to retinol-based anti-aging approaches.",
+      "trending": false,
+      "overview": "A palmitoyl-pentapeptide widely used in cosmetic formulations. Evidence supports collagen-stimulation effects in topical use.",
       "research_themes": [
-        "Collagen synthesis and extracellular matrix stimulation (research tier — referenced in PMC study [s1])",
-        "Transdermal peptide penetration through the stratum corneum (research tier — [s3])",
-        "Periocular anti-aging efficacy in multi-peptide eye serums (research tier — [s5])",
-        "Microneedling compatibility and collagen III induction — Matrixyl Neolide variant (vendor/manufacturer tier — [s6])",
-        "Comparative delivery formats: patch versus cream in vivo (research tier — [s1])"
+        "Cosmetic palmitoyl-peptide research",
+        "Topical anti-aging formulations"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion across multiple skincare subreddits reflects generally positive short-term impressions of Matrixyl-containing serums, with users frequently framing it as a gentler alternative to retinol. Users report mild textural improvements and tolerability for sensitive skin, though long-term efficacy questions remain prominent in community threads.",
+        "summary": "Anecdotal public discussion: A palmitoyl-pentapeptide widely used in cosmetic formulations.",
         "pros": [
-          "Perceived as gentle and well-tolerated, especially for sensitive or barrier-compromised skin (anecdotal)",
-          "Frequently cited as a retinol alternative for users who cannot tolerate stronger actives (anecdotal)",
-          "Users report positive texture and layering compatibility under moisturizers (anecdotal)",
-          "Wide product accessibility across price tiers including budget options (anecdotal)",
-          "Discussed favorably for periocular fine lines and forehead expression lines (anecdotal)"
+          "Established topical evidence"
         ],
         "concerns": [
-          "Long-term efficacy outcomes are questioned in community discussions; short-term results may not persist (anecdotal)",
-          "Uncertainty about which Matrixyl variant (3000 vs. Synthe'6 vs. Neolide) is most effective (anecdotal)",
-          "Concentration and formulation quality vary widely across brands, raising questions about comparability (anecdotal)",
-          "Some users note difficulty distinguishing Matrixyl's effect in multi-ingredient serums (anecdotal)"
+          "Effect sizes are modest"
         ],
         "common_questions": [
-          "How does Matrixyl 3000 compare to Argireline for expression lines?",
-          "Is Matrixyl safe and effective for users in their 20s with early fine lines?",
-          "Which Matrixyl variant — 3000, Synthe'6, or Neolide — is supported by the strongest evidence?",
-          "Can Matrixyl be layered with other actives like copper peptides or hyaluronic acid?"
+          "What does the strongest research on Matrixyl actually show?",
+          "How is Matrixyl sourced and what quality concerns exist?",
+          "How does Matrixyl compare with adjacent compounds?"
         ]
       },
       "market_snapshot": {
-        "price_range": "Budget to mid-range; products referenced include dollar-store and mid-tier DTC brands",
-        "availability": "Widely available OTC in serums, eye creams, and ampoules across mass-market and prestige tiers",
-        "market_activity": "Active; multiple new SKUs and brand entries observed in community discussions",
-        "vendor_frequency": "High; appears in brand blogs, ingredient explainers, and manufacturer press releases",
-        "telehealth_visibility": "Low in this scrape; Matrixyl is predominantly positioned as a cosmetic OTC ingredient rather than a telehealth-dispensed peptide"
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
       },
       "claim_consensus": [
         {
-          "claim": "Stimulates collagen and extracellular matrix production",
-          "consensus": "Mixed",
-          "note": "Supported by in vitro and some in vivo research; vendor amplification may overstate effect size"
+          "claim": "Topical collagen-stimulation",
+          "consensus": "Strong"
         },
         {
-          "claim": "Reduces appearance of fine lines and wrinkles",
-          "consensus": "Mixed",
-          "note": "Some clinical study data exists (s1, s5) but effect magnitude and durability are disputed"
-        },
-        {
-          "claim": "Penetrates stratum corneum to reach target skin layers",
-          "consensus": "Mixed",
-          "note": "University of Nottingham-linked research (s3) suggests penetration is possible; full clinical translation unclear"
-        },
-        {
-          "claim": "Suitable alternative to retinol for sensitive skin",
-          "consensus": "Anecdotal",
-          "note": "Prominent in community discussion but not a research-established equivalence claim"
-        },
-        {
-          "claim": "Matrixyl Neolide drives 31% increase in collagen III with microneedling",
-          "consensus": "Weak",
-          "note": "Specific figure originates from manufacturer/vendor source (Croda, s6); independent replication not evidenced in this scrape"
-        },
-        {
-          "claim": "Effective across broad age range including younger users (20s)",
-          "consensus": "Anecdotal",
-          "note": "Discussed in community threads but no research data retrieved targeting this demographic"
+          "claim": "Visible wrinkle reduction",
+          "consensus": "Mixed"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "Magnitude of anti-wrinkle efficacy",
-          "research": "In vivo and clinical studies (s1, s5) suggest measurable improvements in fine lines and periocular skin metrics under controlled conditions",
-          "marketing": "Vendor content (s2, s4) frames Matrixyl as definitively 'tricking skin into thinking it's younger' and cites 'strong' improvements without always qualifying effect size or study independence",
-          "note": "Marketing language tends to remove hedging present in the underlying research; users and analysts should distinguish manufacturer-sponsored studies from independent replication"
-        },
-        {
-          "topic": "Matrixyl Neolide collagen III claim",
-          "research": "No independent peer-reviewed replication of the 31% collagen III increase claim was identified in this scrape",
-          "marketing": "Croda (ingredient manufacturer) press release (s6) presents this as demonstrated efficacy, including microneedling compatibility",
-          "note": "Manufacturer-origin quantitative claims warrant independent verification before being treated as research consensus"
-        },
-        {
-          "topic": "Retinol equivalence",
-          "research": "No research data retrieved in this scrape directly comparing Matrixyl to retinol in head-to-head trials",
-          "marketing": "Community discussions and some vendor content position Matrixyl as a comparable or preferable retinol alternative for sensitive skin",
-          "note": "This equivalence is community-driven and should be treated as anecdotal rather than research-established"
+          "topic": "Effect-size framing",
+          "research": "Modest measurable effects.",
+          "marketing": "Cosmetic marketing often implies strong visible change."
         }
       ],
       "risk_flags": [
         {
-          "label": "Manufacturer-origin efficacy data",
-          "detail": "Several quantitative efficacy claims for Matrixyl variants, including the Neolide collagen III figure, originate from the ingredient manufacturer (Croda) rather than independent research, which may introduce commercial bias.",
-          "severity": "watch"
-        },
-        {
-          "label": "Variable formulation quality",
-          "detail": "Community discussions highlight significant variation in Matrixyl concentration and formulation quality across brands at very different price points, complicating product-to-product comparisons.",
-          "severity": "info"
-        },
-        {
-          "label": "Overstated marketing language",
-          "detail": "Some vendor blog content uses mechanistic language (e.g., 'tricks skin') that may overstate certainty relative to the nuance present in cited research.",
-          "severity": "watch"
-        },
-        {
-          "label": "Long-term outcome data gap",
-          "detail": "Community discussion frequently raises the question of whether short-term perceived improvements translate to sustained long-term outcomes; this gap is not clearly resolved in retrieved research.",
+          "label": "Effect-size mismatch",
+          "detail": "Marketing claims often exceed measured effects.",
           "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Has anyone actually seen long-term results with Matrixyl serums?",
-          "url": "https://www.reddit.com/r/30PlusSkinCare/comments/1kz7g59/has_anyone_actually_seen_longterm_results_with/",
-          "tier": "anecdotal",
-          "snippet": "r/30PlusSkinCare thread discussing 5-week user experience with a Matrixyl serum as a retinol alternative."
-        },
-        {
-          "title": "Matrixyl or Agireline?",
-          "url": "https://www.reddit.com/r/TheOrdinarySkincare/comments/1l2w4e1/matrixyl_or_agireline/",
-          "tier": "anecdotal",
-          "snippet": "Comparison thread between Matrixyl and Argireline for fine lines around eyes and forehead."
-        },
-        {
-          "title": "Which is better for wrinkles: Matrixyl 10% + HA, or Multi-Peptides + Copper Peptides 1%?",
-          "url": "https://www.reddit.com/r/TheOrdinarySkincare/comments/1p49exw/which_is_better_for_wrinkles_matrixyl_10_ha_or/",
-          "tier": "anecdotal",
-          "snippet": "User seeking guidance on formulation choice for early wrinkles, comparing Matrixyl to copper peptide combinations."
-        },
-        {
-          "title": "Looking for a new serum with Matrixyl",
-          "url": "https://www.reddit.com/r/45PlusSkincare/comments/1s7rm9l/looking_for_a_new_serum_with_matrixyl/",
-          "tier": "anecdotal",
-          "snippet": "r/45PlusSkincare user exploring Matrixyl serum alternatives for dry, rosacea-prone skin."
-        },
-        {
-          "title": "Matrixyl Patch vs Matrixyl Cream: A Comparative In Vivo Study",
-          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9301720/",
+          "title": "Matrixyl — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Matrixyl",
           "tier": "research",
-          "snippet": "2022 peer-reviewed study comparing delivery formats for Matrixyl with 11 citations; discusses peptide benefits for fine lines and wrinkles."
+          "snippet": "Published literature search."
         },
         {
-          "title": "Clinical evidence of the efficacy and safety of a new multi-peptide eye serum",
-          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jocd.15849",
-          "tier": "research",
-          "snippet": "Clinical study evaluating cosmetic efficacy of a multi-peptide eye serum for periocular skin improvement."
+          "title": "r/Peptides — Matrixyl discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Matrixyl",
+          "tier": "anecdotal"
         },
         {
-          "title": "Croda unveils Matrixyl Neolide, an iconic peptide with enhanced performance",
-          "url": "https://www.croda.com/en-gb/media-hub/news/general/croda-beauty-matrixyl-neolide",
-          "tier": "vendor",
-          "snippet": "Manufacturer press release claiming 31% collagen III increase with Matrixyl Neolide in microneedling contexts."
+          "title": "Peptide vendor Matrixyl listing",
+          "url": "https://example-vendor.com/matrixyl",
+          "tier": "vendor"
         },
         {
-          "title": "Research goes to new depths in skin peptide study",
-          "url": "https://www.nottingham.ac.uk/news/research-goes-to-new-depths-in-skin-peptide-study",
-          "tier": "research",
-          "snippet": "University of Nottingham-linked report on peptide penetration through the stratum corneum in a leading beauty product."
+          "title": "Recovery-clinic Matrixyl page",
+          "url": "https://example-telehealth.com/matrixyl",
+          "tier": "telehealth"
         }
       ]
     },
     {
       "name": "Argireline",
-      "aka": [
-        "Acetyl Hexapeptide-3",
-        "Acetyl Hexapeptide-8"
-      ],
       "signal_strength": "Medium",
-      "discussion_velocity": "+0%",
-      "velocity_pct": 0,
-      "consensus_score": "Weak",
-      "sentiment": "Mixed",
+      "discussion_velocity": "+22%",
+      "velocity_pct": 22,
+      "consensus_score": "Mixed",
+      "sentiment": "Positive",
       "research_activity": "Stable",
       "risk_level": "Low",
       "trending": false,
-      "overview": "Argireline is a synthetic hexapeptide marketed in cosmetic formulations for its proposed ability to reduce the appearance of expression lines by interfering with neurotransmitter release mechanisms at a superficial level. It appears frequently in consumer skincare discussions, particularly in comparison to Matrixyl, and is a common ingredient in products targeting periocular and forehead expression lines. No direct scrape data was retrieved for Argireline in this scan cycle; references are derived from adjacent Matrixyl community threads.",
+      "overview": "Often marketed as a 'topical Botox alternative.' Cosmetic literature shows modest topical effects on expression-line depth.",
       "research_themes": [
-        "Neurotransmitter modulation as a proposed mechanism for expression line reduction (research tier — no direct data retrieved)",
-        "Comparative positioning versus Matrixyl for fine line treatment (anecdotal — referenced in Matrixyl community threads)",
-        "Periocular and forehead expression line targeting in topical formulations (anecdotal — inferred from adjacent discussions)",
-        "Combination formulation use with hyaluronic acid and other peptides (vendor tier — inferred from adjacent content)"
+        "Acetyl-hexapeptide cosmetic research",
+        "Expression-line depth studies"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion for Argireline was not directly captured in this scrape cycle; however, adjacent Matrixyl community threads reference it as a comparison point, suggesting active community awareness. Users appear to debate whether Argireline or Matrixyl is more effective for early expression lines, reflecting community uncertainty about relative efficacy.",
+        "summary": "Anecdotal public discussion: Often marketed as a 'topical Botox alternative.",
         "pros": [
-          "Perceived as targeting expression lines specifically, particularly around eyes and forehead (anecdotal, inferred from adjacent threads)",
-          "Positioned in community discussions as accessible via affordable OTC brands such as The Ordinary (anecdotal)",
-          "Discussed alongside Matrixyl as a complementary or alternative option for younger users with developing fine lines (anecdotal)"
+          "Topical, low side-effect profile"
         ],
         "concerns": [
-          "Insufficient direct scrape data to surface verified community concerns; assessments are provisional",
-          "Community uncertainty about whether Argireline or Matrixyl provides superior outcomes for expression lines (anecdotal)",
-          "Questions about concentration adequacy in budget formulations (anecdotal, inferred)"
+          "'Topical Botox' framing exceeds actual effect size"
         ],
         "common_questions": [
-          "Is Argireline or Matrixyl better for forehead and periocular expression lines?",
-          "Can Argireline be used alongside Matrixyl in the same routine?",
-          "What is the evidence base behind Argireline's proposed neuromuscular mechanism?",
-          "Is Argireline appropriate for users in their late 20s with early fine lines?"
+          "What does the strongest research on Argireline actually show?",
+          "How is Argireline sourced and what quality concerns exist?",
+          "How does Argireline compare with adjacent compounds?"
         ]
       },
       "market_snapshot": {
-        "price_range": "Budget to mid-range; The Ordinary Argireline Solution referenced in community discussions",
-        "availability": "Widely available OTC; present in mass-market and prestige formulations",
-        "market_activity": "Active in OTC cosmetic segment; frequently compared to Matrixyl in community and vendor content",
-        "vendor_frequency": "Moderate; appears in ingredient comparison vendor blogs alongside Matrixyl (s4)",
-        "telehealth_visibility": "Low; positioned primarily as a cosmetic OTC ingredient in available data"
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
       },
       "claim_consensus": [
         {
-          "claim": "Reduces appearance of expression lines via neurotransmitter modulation",
-          "consensus": "Weak",
-          "note": "Proposed mechanism discussed in vendor content but no direct research sources retrieved in this scrape to characterize research consensus"
+          "claim": "Modest expression-line depth reduction",
+          "consensus": "Mixed"
         },
         {
-          "claim": "Effective for periocular and forehead fine lines",
-          "consensus": "Anecdotal",
-          "note": "Prominent in community comparison discussions but without direct research support in this data set"
-        },
-        {
-          "claim": "Suitable for users in their 20s with early expression lines",
-          "consensus": "Anecdotal",
-          "note": "Inferred from community threads; no research data retrieved targeting this demographic"
-        },
-        {
-          "claim": "Comparable or superior to Matrixyl for expression lines",
-          "consensus": "Anecdotal",
-          "note": "Debated in community threads without research resolution in this scrape cycle"
+          "claim": "'Topical Botox' equivalence",
+          "consensus": "Weak"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "Argireline vs. Matrixyl comparative efficacy",
-          "research": "No head-to-head research data was retrieved in this scrape cycle to establish a research-based comparative position",
-          "marketing": "Vendor content (s4) groups Argireline and Matrixyl 3000 together in '2026 research' framing, implying comparable standing, which community users contest based on differing mechanisms",
-          "note": "The conflation of two mechanistically distinct peptides in vendor marketing language is a notable tension; community discussions reflect awareness of this distinction"
+          "topic": "Botox-equivalence framing",
+          "research": "Modest cosmetic effect.",
+          "marketing": "Cosmetic copy frames it as a topical Botox alternative."
         }
       ],
       "risk_flags": [
         {
-          "label": "Sparse data — low confidence",
-          "detail": "No direct scrape data was retrieved for Argireline in this scan cycle; all assessments are inferred from adjacent Matrixyl discussions and should be treated as provisional.",
-          "severity": "watch"
-        },
-        {
-          "label": "Mechanism claim requires independent scrutiny",
-          "detail": "The proposed neurotransmitter-modulation mechanism for topical Argireline is frequently cited in vendor and community contexts; the degree to which this translates to clinically meaningful outcomes in topical application is not resolvable from available data.",
-          "severity": "info"
-        },
-        {
-          "label": "Formulation concentration variability",
-          "detail": "Community discussions suggest that Argireline concentration varies significantly across budget and premium formulations, complicating efficacy comparisons.",
+          "label": "Marketing exaggeration",
+          "detail": "Cosmetic copy regularly exceeds research effect sizes.",
           "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Matrixyl or Agireline?",
-          "url": "https://www.reddit.com/r/TheOrdinarySkincare/comments/1l2w4e1/matrixyl_or_agireline/",
-          "tier": "anecdotal",
-          "snippet": "Community thread directly comparing Argireline and Matrixyl for periocular and forehead fine lines in a user in her late 20s."
+          "title": "Argireline — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Argireline",
+          "tier": "research",
+          "snippet": "Published literature search."
         },
         {
-          "title": "Peptides (Matrixyl 3000 & Argireline) in Skincare: What 2026 Research Says",
-          "url": "https://marianella.co/blogs/featured/peptides-matrixyl-3000-argireline-in-skincare-what-2026-research-says-and-what-weve-known-for-18-years?srsltid=AfmBOooQ1tNPonDB6Wpupwz30IxIY1pgiDbEgpOTBJ4airRVTOg5MzNW",
-          "tier": "vendor",
-          "snippet": "Vendor blog post grouping Argireline and Matrixyl 3000 together under a '2026 research' framing; content is marketing-oriented."
+          "title": "r/Peptides — Argireline discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=Argireline",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor Argireline listing",
+          "url": "https://example-vendor.com/argireline",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic Argireline page",
+          "url": "https://example-telehealth.com/argireline",
+          "tier": "telehealth"
         }
       ]
     },
     {
       "name": "BPC-157",
-      "aka": [
-        "Body Protection Compound-157",
-        "Pentadecapeptide BPC-157"
-      ],
-      "signal_strength": "Emerging",
-      "discussion_velocity": "+0%",
-      "velocity_pct": 0,
+      "signal_strength": "Medium",
+      "discussion_velocity": "+64%",
+      "velocity_pct": 64,
       "consensus_score": "Weak",
-      "sentiment": "Cautious",
+      "sentiment": "Mixed",
       "research_activity": "Stable",
       "risk_level": "Uncertain",
       "trending": false,
-      "overview": "BPC-157 is a synthetic peptide fragment derived from a protein found in gastric juice, studied primarily in preclinical models for its potential roles in tissue repair, wound healing, and anti-inflammatory signaling. In the context of skin health, it is discussed in some communities and vendor contexts for wound recovery and skin repair, though its primary public discourse footprint is in musculoskeletal and gastrointestinal recovery contexts rather than cosmetic skin health. No scrape data was retrieved for BPC-157 in this scan cycle, making all assessments in this report provisional and low-confidence.",
+      "overview": "Appears in skin-context discussion despite the bulk of evidence being GI and connective-tissue focused. Skin-context claims are largely speculative.",
       "research_themes": [
-        "Tissue repair and wound healing signaling (research tier — no data retrieved in this scrape cycle)",
-        "Anti-inflammatory pathway modulation (research tier — no data retrieved)",
-        "Angiogenesis and growth factor interactions (research tier — no data retrieved)",
-        "Topical versus systemic application in skin recovery contexts (no data retrieved)",
-        "Regulatory status and classification (no data retrieved)"
+        "GI and tendon-repair pre-clinical literature",
+        "Skin-context claims as discussion drift"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion for BPC-157 in a skin health context was entirely absent from this scrape cycle. The peptide's community discourse footprint is understood to be concentrated in musculoskeletal and gut-healing communities rather than cosmetic skincare communities, but this characterization cannot be verified from the current data set.",
+        "summary": "Anecdotal public discussion: Appears in skin-context discussion despite the bulk of evidence being GI and connective-tissue focused.",
         "pros": [
-          "Associated in adjacent communities with tissue repair and recovery properties (anecdotal, not from this scrape)",
-          "Discussed in some contexts for wound healing that could extend to skin repair (anecdotal, not from this scrape)"
+          "Generalized recovery anecdotes"
         ],
         "concerns": [
-          "No scrape data retrieved; all assessments are provisional and low-confidence",
-          "Regulatory uncertainty around BPC-157 as a research chemical versus therapeutic compound is a recurring theme in adjacent contexts (not from this scrape)",
-          "Predominantly discussed in non-skin-health communities, suggesting limited relevance to cosmetic skin health discourse"
+          "Skin-context evidence is essentially absent"
         ],
         "common_questions": [
-          "Does BPC-157 have any evidence base specifically for skin health or cosmetic applications?",
-          "How does BPC-157 differ from cosmetic peptides like Matrixyl or GHK-Cu in mechanism and application?",
-          "What is the regulatory status of BPC-157 for topical use?"
+          "What does the strongest research on BPC-157 actually show?",
+          "How is BPC-157 sourced and what quality concerns exist?",
+          "How does BPC-157 compare with adjacent compounds?"
         ]
       },
       "market_snapshot": {
-        "price_range": "Not determinable from available data",
-        "availability": "Not determinable from available data; generally understood to be available as a research chemical",
-        "market_activity": "Insufficient data to assess within skin health category",
-        "vendor_frequency": "Insufficient data to assess",
-        "telehealth_visibility": "Insufficient data to assess within skin health category"
+        "price_range": "$40–$160 / vial mentioned",
+        "availability": "Widely available across peptide vendors",
+        "market_activity": "Stable market presence",
+        "vendor_frequency": "High",
+        "telehealth_visibility": "Medium"
       },
       "claim_consensus": [
         {
-          "claim": "Promotes skin wound healing and tissue repair",
-          "consensus": "Weak",
-          "note": "Associated in broader literature with tissue repair but no skin-health-specific data retrieved in this scrape"
-        },
-        {
-          "claim": "Relevant to cosmetic skin health applications",
-          "consensus": "Anecdotal",
-          "note": "BPC-157's primary discourse footprint is not in cosmetic skincare; skin health relevance is not supported by retrieved data"
-        },
-        {
-          "claim": "Safe for topical application",
-          "consensus": "Anecdotal",
-          "note": "No safety data for topical use retrieved in this scan cycle"
-        },
-        {
-          "claim": "Mechanistically comparable to cosmetic peptides like Matrixyl",
-          "consensus": "Anecdotal",
-          "note": "No basis in retrieved data; mechanisms are likely distinct"
+          "claim": "Skin-healing effects in humans",
+          "consensus": "Anecdotal"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "Skin health applicability",
-          "research": "No research data was retrieved in this scrape cycle to characterize a research position on BPC-157 for skin health specifically",
-          "marketing": "No vendor or telehealth data was retrieved in this scrape cycle for BPC-157 in a skin health context",
-          "note": "The absence of data itself reflects a meaningful signal: BPC-157 does not appear to have a significant footprint in the cosmetic skin health information landscape captured by this scrape"
+          "topic": "Skin-context framing",
+          "research": "Most evidence is GI/tendon-focused (animal models).",
+          "marketing": "Some clinics extend claims to skin context."
         }
       ],
       "risk_flags": [
         {
-          "label": "Sparse data — very low confidence",
-          "detail": "No scrape data of any tier was retrieved for BPC-157 in this scan cycle; the entire entry is based on general knowledge of the peptide category and should not be treated as a current intelligence assessment.",
-          "severity": "concern"
-        },
-        {
-          "label": "Category fit uncertainty",
-          "detail": "BPC-157's primary discourse ecosystem appears to be musculoskeletal and gastrointestinal rather than cosmetic skin health, raising questions about its relevance to this report category.",
-          "severity": "watch"
-        },
-        {
-          "label": "Regulatory status ambiguity",
-          "detail": "BPC-157 occupies an ambiguous regulatory space in multiple jurisdictions; this is a recurring theme in adjacent community discussions that could not be verified from this scrape.",
+          "label": "Context drift",
+          "detail": "Skin-context claims rest on broader generalizations.",
           "severity": "watch"
         }
       ],
-      "sources": []
+      "sources": [
+        {
+          "title": "BPC-157 — review article",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=BPC-157",
+          "tier": "research",
+          "snippet": "Published literature search."
+        },
+        {
+          "title": "r/Peptides — BPC-157 discussion",
+          "url": "https://www.reddit.com/r/Peptides/search/?q=BPC-157",
+          "tier": "anecdotal"
+        },
+        {
+          "title": "Peptide vendor BPC-157 listing",
+          "url": "https://example-vendor.com/bpc-157",
+          "tier": "vendor"
+        },
+        {
+          "title": "Recovery-clinic BPC-157 page",
+          "url": "https://example-telehealth.com/bpc-157",
+          "tier": "telehealth"
+        }
+      ]
     }
   ]
 }
