@@ -1,355 +1,452 @@
 {
   "category": "muscle-retention",
   "category_label": "Muscle Retention",
-  "generated_at": "2026-05-11T14:44:53.921Z",
+  "generated_at": "2025-07-22T00:00:00.000Z",
   "mode": "live",
   "peptides": [
     {
       "name": "Ipamorelin",
+      "aka": [
+        "GHRP-Ipamorelin",
+        "Aib-His-D-2-Nal-D-Phe-Lys-NH2"
+      ],
       "signal_strength": "High",
-      "discussion_velocity": "+116%",
-      "velocity_pct": 116,
+      "discussion_velocity": "+62%",
+      "velocity_pct": 62,
       "consensus_score": "Mixed",
       "sentiment": "Positive",
       "research_activity": "Stable",
-      "risk_level": "Moderate",
+      "risk_level": "Uncertain",
       "trending": true,
-      "overview": "A selective ghrelin-receptor agonist often paired with CJC-1295 in discussion. Public conversation focuses on lean-mass support and recovery; published trials are modest in scope.",
+      "overview": "Ipamorelin is a synthetic pentapeptide classified as a growth hormone secretagogue (GHS) and ghrelin receptor agonist, first characterized in peer-reviewed literature in 1998 for its selective GH-releasing properties in vitro and in vivo. The information landscape around it in the muscle-retention context is active, with public discussion centering on recovery, body composition, and sleep quality during cutting phases, while vendor content broadly claims lean muscle and fat-loss benefits. Research grounding for muscle-retention outcomes in healthy adults remains limited relative to the volume of commercial and social-media claims.",
       "research_themes": [
-        "Ghrelin-receptor selectivity",
-        "GH-pulsatile-release mechanism",
-        "CJC-1295 stacking culture"
+        "Selective GH secretagogue mechanism (research-backed: 1998 Raun et al.)",
+        "Appetite stimulation and attenuation of wasting in cachexia models (vendor-cited preclinical data)",
+        "Bone density modulation in preclinical settings (vendor-cited)",
+        "Recovery and sleep quality improvement (anecdotal discussion tier)",
+        "Stack synergy with CJC-1295 for pulsatile GH release (anecdotal/marketing tier)"
       ],
       "public_sentiment": {
-        "summary": "Anecdotal public discussion: A selective ghrelin-receptor agonist often paired with CJC-1295 in discussion.",
+        "summary": "Anecdotal public discussion across Reddit communities portrays Ipamorelin — frequently stacked with CJC-1295 — as supportive of muscle preservation during caloric deficits, with users also citing improved sleep and recovery as secondary observations. These reports are self-reported, uncontrolled, and cannot be treated as evidence of efficacy.",
         "pros": [
-          "Subjective recovery and sleep reports",
-          "Cleaner side-effect profile vs. older GHRPs reported"
+          "Users anecdotally report preserved muscle mass during cutting phases",
+          "Improved sleep depth and recovery time commonly mentioned in forum posts",
+          "Perceived reduction in fat mass noted alongside training consistency",
+          "Stack with CJC-1295 described as synergistic for GH pulse enhancement in user reports",
+          "Described by some users as a 'mild' or 'natural-feeling' GH stimulant"
         ],
         "concerns": [
-          "Long-term human data limited",
-          "Lean-mass claims often exceed evidence"
+          "Uncertainty about whether effects are attributable to the peptide or concurrent diet and training changes",
+          "Questions about solo use versus stacking as necessary for effect",
+          "Sourcing quality and product authenticity mentioned as unresolved concerns",
+          "Lack of personal baseline testing makes it difficult for users to interpret results"
         ],
         "common_questions": [
-          "What does the strongest research on Ipamorelin actually show?",
-          "How is Ipamorelin sourced and what quality concerns exist?",
-          "How does Ipamorelin compare with adjacent compounds?"
+          "Can Ipamorelin be used effectively on its own, or must it be stacked?",
+          "What timeline is realistic for noticing muscle-retention or body-composition changes?",
+          "How does it compare to other GHRPs or GHRHs for cutting-phase use?",
+          "Is the CJC-1295 + Ipamorelin combination meaningfully superior to either alone?"
         ]
       },
       "market_snapshot": {
-        "price_range": "$80–$320 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "Very high",
-        "telehealth_visibility": "High"
+        "price_range": "Not specified in supplied data",
+        "availability": "Multiple vendor and telehealth sites actively listing product as of scrape date",
+        "market_activity": "High commercial activity; significant vendor content volume observed",
+        "vendor_frequency": "Appears across research-chemical vendors, compounding-adjacent telehealth, and men's health clinics",
+        "telehealth_visibility": "Visible in telehealth marketing contexts; content framed as 'peptide therapy' rather than research compound"
       },
       "claim_consensus": [
         {
-          "claim": "Triggers GH pulse",
-          "consensus": "Strong"
-        },
-        {
-          "claim": "Lean-mass increase in healthy adults",
-          "consensus": "Mixed"
-        },
-        {
-          "claim": "Recovery improvements",
-          "consensus": "Mixed"
-        }
-      ],
-      "conflicting_claims": [
-        {
-          "topic": "Body-composition framing",
-          "research": "Modest clinical effect sizes.",
-          "marketing": "Vendor pages emphasize muscle-building outcomes."
-        }
-      ],
-      "risk_flags": [
-        {
-          "label": "GH-axis modulation",
-          "detail": "Long-term GH-axis effects in healthy adults are not well characterized.",
-          "severity": "watch"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ipamorelin — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Ipamorelin",
-          "tier": "research",
-          "snippet": "Published literature search."
-        },
-        {
-          "title": "r/Peptides — Ipamorelin discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=Ipamorelin",
-          "tier": "anecdotal"
-        },
-        {
-          "title": "Peptide vendor Ipamorelin listing",
-          "url": "https://example-vendor.com/ipamorelin",
-          "tier": "vendor"
-        },
-        {
-          "title": "Recovery-clinic Ipamorelin page",
-          "url": "https://example-telehealth.com/ipamorelin",
-          "tier": "telehealth"
-        }
-      ]
-    },
-    {
-      "name": "CJC-1295",
-      "signal_strength": "High",
-      "discussion_velocity": "+102%",
-      "velocity_pct": 102,
-      "consensus_score": "Mixed",
-      "sentiment": "Positive",
-      "research_activity": "Stable",
-      "risk_level": "Moderate",
-      "trending": true,
-      "overview": "A GHRH analog typically discussed alongside Ipamorelin. Trial literature on the original DAC variant exists; the no-DAC variant is supported mostly by anecdotal use.",
-      "research_themes": [
-        "GHRH-analog mechanism",
-        "DAC vs. no-DAC distinction in discussion",
-        "Stacking culture with Ipamorelin"
-      ],
-      "public_sentiment": {
-        "summary": "Anecdotal public discussion: A GHRH analog typically discussed alongside Ipamorelin.",
-        "pros": [
-          "Subjective recovery and sleep reports"
-        ],
-        "concerns": [
-          "DAC vs. no-DAC confusion in discussion",
-          "Long-term GH-axis effects unclear"
-        ],
-        "common_questions": [
-          "What does the strongest research on CJC-1295 actually show?",
-          "How is CJC-1295 sourced and what quality concerns exist?",
-          "How does CJC-1295 compare with adjacent compounds?"
-        ]
-      },
-      "market_snapshot": {
-        "price_range": "$80–$320 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "Very high",
-        "telehealth_visibility": "High"
-      },
-      "claim_consensus": [
-        {
-          "claim": "Increases GH/IGF-1 levels",
+          "claim": "Ipamorelin stimulates endogenous GH release via pituitary ghrelin receptors",
           "consensus": "Strong",
-          "note": "DAC variant"
+          "note": "Supported by 1998 peer-reviewed characterization (Raun et al., PMID 9849822)"
         },
         {
-          "claim": "Increases muscle mass in healthy adults",
-          "consensus": "Mixed"
+          "claim": "Ipamorelin preserves or builds lean muscle mass in healthy adults",
+          "consensus": "Weak",
+          "note": "Frequently asserted in vendor and forum content; not directly supported by supplied research data for healthy human populations"
+        },
+        {
+          "claim": "Ipamorelin improves recovery and sleep quality",
+          "consensus": "Anecdotal",
+          "note": "Appears primarily in user discussion threads; not supported by cited research in supplied data"
+        },
+        {
+          "claim": "Ipamorelin reduces fat mass",
+          "consensus": "Weak",
+          "note": "Vendor content asserts this broadly; preclinical wasting-model data referenced but not confirmed for general fat loss in supplied sources"
+        },
+        {
+          "claim": "Ipamorelin is selective and does not significantly raise cortisol or prolactin",
+          "consensus": "Mixed",
+          "note": "Selectivity noted in original research; vendor amplification of this point exceeds what supplied research data confirms for human use at varied doses"
+        },
+        {
+          "claim": "Stacking with CJC-1295 produces synergistic GH output",
+          "consensus": "Anecdotal",
+          "note": "Widely discussed in forums and vendor guides; mechanistic plausibility cited but controlled human evidence not present in supplied data"
         }
       ],
       "conflicting_claims": [
         {
-          "topic": "DAC vs. no-DAC framing",
-          "research": "Different pharmacokinetics; trial data primarily for DAC variant.",
-          "marketing": "Vendor pages often blur the distinction."
+          "topic": "Muscle growth and lean body mass claims",
+          "research": "The 1998 Raun et al. publication characterizes Ipamorelin as a potent and selective GH secretagogue in vitro and in vivo but does not establish muscle-retention or hypertrophy outcomes in healthy adults.",
+          "marketing": "Vendor and telehealth sources (e.g., peptideresearch.us, americanmalemedical.com, womenshealthofmd.com) broadly assert benefits including lean muscle support, fat loss, and recovery enhancement as established outcomes.",
+          "note": "The gap between research scope and marketing assertions represents the primary information tension for this peptide in the muscle-retention category."
+        },
+        {
+          "topic": "Safety profile and selectivity",
+          "research": "Selectivity relative to other GHRPs is noted in the original research characterization as a distinguishing pharmacological feature.",
+          "marketing": "Telehealth and vendor content routinely frames Ipamorelin's selectivity as a safety guarantee and positions it as low-risk for general use, which extends beyond what the supplied research data supports.",
+          "note": "Selective receptor binding is a pharmacological property, not a blanket safety certification; vendor framing conflates mechanism with clinical safety."
+        },
+        {
+          "topic": "Wasting-disorder data applied to general fitness context",
+          "research": "Vendor-cited studies reference appetite and weight-loss attenuation in wasting disorder research models.",
+          "marketing": "This data is repurposed in vendor content to imply general muscle-preservation and body-recomposition benefits for healthy, active individuals.",
+          "note": "Extrapolation from disease-state models to healthy-population fitness outcomes is a common information-landscape tension not resolved in supplied data."
         }
       ],
       "risk_flags": [
         {
-          "label": "GH-axis modulation",
-          "detail": "Sustained GH-axis stimulation in healthy adults is not well characterized.",
+          "label": "Regulatory and legal status",
+          "detail": "Ipamorelin is not approved as a therapeutic drug in most jurisdictions for general fitness use; its regulatory classification varies and is not addressed in most forum or vendor content observed in supplied data.",
+          "severity": "concern"
+        },
+        {
+          "label": "Uncontrolled self-administration reports",
+          "detail": "Public forum posts describe self-directed use without medical supervision, baseline hormonal testing, or structured outcome monitoring, limiting the interpretability of reported outcomes.",
           "severity": "watch"
-        }
-      ],
-      "sources": [
-        {
-          "title": "CJC-1295 — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=CJC-1295",
-          "tier": "research",
-          "snippet": "Published literature search."
         },
         {
-          "title": "r/Peptides — CJC-1295 discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=CJC-1295",
-          "tier": "anecdotal"
+          "label": "Product quality and sourcing uncertainty",
+          "detail": "Forum users in supplied data raise questions about product purity and vendor reliability; research-chemical market lacks standardized quality assurance equivalent to pharmaceutical manufacturing.",
+          "severity": "concern"
         },
         {
-          "title": "Peptide vendor CJC-1295 listing",
-          "url": "https://example-vendor.com/cjc-1295",
-          "tier": "vendor"
-        },
-        {
-          "title": "Recovery-clinic CJC-1295 page",
-          "url": "https://example-telehealth.com/cjc-1295",
-          "tier": "telehealth"
-        }
-      ]
-    },
-    {
-      "name": "Tesamorelin",
-      "signal_strength": "Medium",
-      "discussion_velocity": "+44%",
-      "velocity_pct": 44,
-      "consensus_score": "Strong",
-      "sentiment": "Mixed",
-      "research_activity": "Stable",
-      "risk_level": "Moderate",
-      "trending": false,
-      "overview": "An FDA-approved GHRH analog originally indicated for HIV-associated visceral adiposity. Off-label discussion has expanded into general body-composition contexts.",
-      "research_themes": [
-        "Visceral-adiposity research literature",
-        "Off-label discussion expansion"
-      ],
-      "public_sentiment": {
-        "summary": "Anecdotal public discussion: An FDA-approved GHRH analog originally indicated for HIV-associated visceral adiposity.",
-        "pros": [
-          "Strong indication-specific evidence"
-        ],
-        "concerns": [
-          "Off-label extrapolation",
-          "Cost"
-        ],
-        "common_questions": [
-          "What does the strongest research on Tesamorelin actually show?",
-          "How is Tesamorelin sourced and what quality concerns exist?",
-          "How does Tesamorelin compare with adjacent compounds?"
-        ]
-      },
-      "market_snapshot": {
-        "price_range": "$40–$160 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "High",
-        "telehealth_visibility": "Medium"
-      },
-      "claim_consensus": [
-        {
-          "claim": "Reduces visceral adipose tissue (HIV-associated)",
-          "consensus": "Strong"
-        },
-        {
-          "claim": "Body-composition effects in healthy adults",
-          "consensus": "Mixed"
-        }
-      ],
-      "conflicting_claims": [
-        {
-          "topic": "Off-label framing",
-          "research": "Strong evidence is indication-specific.",
-          "marketing": "Telehealth pages often extend claims to general body-composition use."
-        }
-      ],
-      "risk_flags": [
-        {
-          "label": "Off-label extrapolation",
-          "detail": "Strong indication-specific evidence is often re-framed for broader use.",
-          "severity": "watch"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Tesamorelin — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Tesamorelin",
-          "tier": "research",
-          "snippet": "Published literature search."
-        },
-        {
-          "title": "r/Peptides — Tesamorelin discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=Tesamorelin",
-          "tier": "anecdotal"
-        },
-        {
-          "title": "Peptide vendor Tesamorelin listing",
-          "url": "https://example-vendor.com/tesamorelin",
-          "tier": "vendor"
-        },
-        {
-          "title": "Recovery-clinic Tesamorelin page",
-          "url": "https://example-telehealth.com/tesamorelin",
-          "tier": "telehealth"
-        }
-      ]
-    },
-    {
-      "name": "Sermorelin",
-      "signal_strength": "Medium",
-      "discussion_velocity": "+28%",
-      "velocity_pct": 28,
-      "consensus_score": "Mixed",
-      "sentiment": "Positive",
-      "research_activity": "Stable",
-      "risk_level": "Low",
-      "trending": false,
-      "overview": "A GHRH analog with a long history in clinical pediatric use; recently revived in adult anti-aging telehealth marketing.",
-      "research_themes": [
-        "Pediatric clinical history",
-        "Adult anti-aging telehealth revival"
-      ],
-      "public_sentiment": {
-        "summary": "Anecdotal public discussion: A GHRH analog with a long history in clinical pediatric use; recently revived in adult anti-aging telehealth marketing.",
-        "pros": [
-          "Familiar safety footprint"
-        ],
-        "concerns": [
-          "Modest effect sizes in adults"
-        ],
-        "common_questions": [
-          "What does the strongest research on Sermorelin actually show?",
-          "How is Sermorelin sourced and what quality concerns exist?",
-          "How does Sermorelin compare with adjacent compounds?"
-        ]
-      },
-      "market_snapshot": {
-        "price_range": "$40–$160 / vial mentioned",
-        "availability": "Widely available across peptide vendors",
-        "market_activity": "Stable market presence",
-        "vendor_frequency": "High",
-        "telehealth_visibility": "Medium"
-      },
-      "claim_consensus": [
-        {
-          "claim": "Stimulates endogenous GH release",
-          "consensus": "Strong"
-        },
-        {
-          "claim": "Body-composition effects in healthy adults",
-          "consensus": "Mixed"
-        }
-      ],
-      "conflicting_claims": [
-        {
-          "topic": "Anti-aging framing",
-          "research": "Pediatric evidence is established; adult anti-aging evidence is modest.",
-          "marketing": "Telehealth pages emphasize anti-aging outcomes."
-        }
-      ],
-      "risk_flags": [
-        {
-          "label": "Modest effect sizes",
-          "detail": "Adult body-composition effects are typically modest in trials.",
+          "label": "Confounded self-reported outcomes",
+          "detail": "User transformation reports in supplied data (e.g., r/WorkoutRoutines) combine peptide use with dietary and training changes, making it impossible to attribute results to Ipamorelin specifically.",
           "severity": "info"
         }
       ],
       "sources": [
         {
-          "title": "Sermorelin — review article",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Sermorelin",
+          "title": "Ipamorelin, the first selective growth hormone secretagogue (Raun et al., 1998)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/",
           "tier": "research",
-          "snippet": "Published literature search."
+          "snippet": "Peer-reviewed 1998 characterization of Ipamorelin as a selective pentapeptide GH secretagogue; 186 citations noted in supplied data."
         },
         {
-          "title": "r/Peptides — Sermorelin discussion",
-          "url": "https://www.reddit.com/r/Peptides/search/?q=Sermorelin",
-          "tier": "anecdotal"
+          "title": "r/BodyHackGuide — CJC-1295+Ipamorelin experience (cutting phase log)",
+          "url": "https://www.reddit.com/r/BodyHackGuide/comments/1rjjec1/cjc1295ipamorelin_experience/",
+          "tier": "anecdotal",
+          "snippet": "User log describing an 8-week anecdotal stack use during a cut, with goals of muscle preservation, strength retention, and sleep improvement."
         },
         {
-          "title": "Peptide vendor Sermorelin listing",
-          "url": "https://example-vendor.com/sermorelin",
-          "tier": "vendor"
+          "title": "r/Biohackers — CJC-1295 + Ipamorelin 3-month experience thread",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1stsnij/cjc_1295_ipamorelin_anyone_here_thats_used_these/",
+          "tier": "anecdotal",
+          "snippet": "Community discussion soliciting anecdotal reports from users with 3+ months of stack experience."
         },
         {
-          "title": "Recovery-clinic Sermorelin page",
-          "url": "https://example-telehealth.com/sermorelin",
-          "tier": "telehealth"
+          "title": "r/WorkoutRoutines — 1-month transformation including CJC-1295/Ipamorelin",
+          "url": "https://www.reddit.com/r/WorkoutRoutines/comments/1st0av6/1_month_transformation_dialed_everything_in/",
+          "tier": "anecdotal",
+          "snippet": "User body-composition report combining peptide use with diet and training; confounded self-reported outcome."
+        },
+        {
+          "title": "r/BodyHackGuide — CJC-1295 (No DAC) + Ipamorelin Guide",
+          "url": "https://www.reddit.com/r/BodyHackGuide/comments/1noig5m/cjc1295_no_dac_ipamorelin_guide_stoopid_simple/",
+          "tier": "anecdotal",
+          "snippet": "Forum-generated guide describing stack mechanism and claimed outcomes including recovery, sleep, and body composition."
+        },
+        {
+          "title": "Studies in Ipamorelin for Muscle Growth and Bone Density (BiotechPeptides vendor)",
+          "url": "https://biotechpeptides.com/2023/01/25/studies-in-ipamorelin-for-muscle-growth-and-bone-density/",
+          "tier": "vendor",
+          "snippet": "Vendor content referencing preclinical research on appetite, wasting, and bone density; framed as supporting muscle and growth claims."
+        },
+        {
+          "title": "Ipamorelin Benefits and How It Works in Muscle Repair (PeptideResearch vendor)",
+          "url": "https://peptideresearch.us/ipamorelin-benefits-and-how-it-works-in-muscle-repair-and-fat-metabolism/",
+          "tier": "vendor",
+          "snippet": "Vendor landing page asserting muscle repair and fat metabolism benefits; not a primary research source."
+        },
+        {
+          "title": "Ipamorelin Peptide Therapy — Women's Health of MD (telehealth)",
+          "url": "https://www.womenshealthofmd.com/ipamorelin-peptide-therapy",
+          "tier": "telehealth",
+          "snippet": "Telehealth marketing content positioning Ipamorelin as a therapy for lean muscle, fat loss, and healthy aging."
         }
       ]
+    },
+    {
+      "name": "CJC-1295",
+      "aka": [
+        "CJC1295",
+        "CJC-1295 DAC",
+        "CJC-1295 No DAC",
+        "Mod GRF 1-29"
+      ],
+      "signal_strength": "Medium",
+      "discussion_velocity": "+0%",
+      "velocity_pct": 0,
+      "consensus_score": "Weak",
+      "sentiment": "Mixed",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "CJC-1295 is a synthetic analogue of growth hormone-releasing hormone (GHRH) designed to extend the half-life of endogenous GHRH signaling, with two variants differing in the presence or absence of a Drug Affinity Complex (DAC) that affects release kinetics. In the information landscape, CJC-1295 appears almost exclusively in combination with Ipamorelin, with independent characterization sparse in supplied data. No direct scrape data was retrieved for CJC-1295 as a standalone entry; observations below are drawn conservatively from its co-occurrence with Ipamorelin in the Ipamorelin data tier.",
+      "research_themes": [
+        "GHRH analogue mechanism and extended half-life via DAC modification (general knowledge, not confirmed by supplied research scrape)",
+        "Pulsatile GH release amplification when combined with GHRPs (anecdotal/marketing tier in supplied data)",
+        "Body composition and muscle preservation claims in cutting contexts (anecdotal discussion tier)",
+        "DAC vs. No-DAC variant distinctions and implications (forum discussion tier only in supplied data)"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion retrieved for CJC-1295 exists only as co-occurrence data within Ipamorelin-focused threads; no standalone CJC-1295 sentiment scrape was available, and conclusions drawn here carry low confidence. Community discussion frames CJC-1295 primarily as a stack component rather than a standalone agent for muscle retention.",
+        "pros": [
+          "Anecdotally described as amplifying GH pulse when combined with Ipamorelin",
+          "Users in co-occurrence threads report perceived improvements in recovery and body composition",
+          "Described as synergistic in community-generated guides found in supplied data"
+        ],
+        "concerns": [
+          "No standalone discussion data available; all observations are co-occurrence artifacts",
+          "DAC versus No-DAC variant confusion noted in forum content",
+          "Unclear whether muscle-retention effects attributed to the stack are from CJC-1295, Ipamorelin, or neither"
+        ],
+        "common_questions": [
+          "What is the practical difference between CJC-1295 with DAC and without DAC?",
+          "Is CJC-1295 effective without Ipamorelin for muscle retention?",
+          "How long before muscle-preservation effects are observable?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "Not determinable from supplied data",
+        "availability": "Inferred as widely available based on co-occurrence with Ipamorelin in vendor and forum contexts",
+        "market_activity": "Appears frequently as a stack component in vendor and forum content observed in Ipamorelin data",
+        "vendor_frequency": "Co-listed with Ipamorelin across research-chemical and telehealth vendor contexts in supplied data",
+        "telehealth_visibility": "Visible in telehealth stack offerings inferred from Ipamorelin data; direct CJC-1295 telehealth pages not in supplied scrape"
+      },
+      "claim_consensus": [
+        {
+          "claim": "CJC-1295 extends GHRH signaling duration via DAC modification",
+          "consensus": "Mixed",
+          "note": "Mechanistically plausible and referenced in general knowledge; not supported by a direct research source in supplied scrape data"
+        },
+        {
+          "claim": "CJC-1295 + Ipamorelin stack produces synergistic GH release",
+          "consensus": "Anecdotal",
+          "note": "Widely asserted in forum guides and vendor content in supplied data; no controlled human study supporting this specific stack present in supplied sources"
+        },
+        {
+          "claim": "CJC-1295 supports muscle retention during caloric deficit",
+          "consensus": "Anecdotal",
+          "note": "Appears in self-reported forum logs as a stack goal; not research-grounded in supplied data"
+        },
+        {
+          "claim": "No-DAC variant is preferable for mimicking natural GH pulsatility",
+          "consensus": "Weak",
+          "note": "Discussed in forum content; pharmacokinetic rationale cited anecdotally but not supported by supplied research sources"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Stack synergy and muscle-retention efficacy",
+          "research": "No direct research data on CJC-1295 muscle-retention outcomes in healthy adults was present in supplied scrape; mechanistic plausibility of GHRH analogue action is general knowledge only.",
+          "marketing": "Forum guides and vendor content in supplied data assert the CJC-1295 + Ipamorelin stack as an established, effective method for muscle preservation and body recomposition.",
+          "note": "The absence of research-tier data in the scrape means this tension cannot be fully characterized; low confidence flag applies."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "No standalone scrape data available",
+          "detail": "All CJC-1295 intelligence in this report is derived conservatively from co-occurrence with Ipamorelin; standalone signal confidence is low and this entry should be treated as provisional.",
+          "severity": "info"
+        },
+        {
+          "label": "Variant confusion risk",
+          "detail": "Forum discussion in supplied data highlights user confusion between DAC and No-DAC variants, which have different pharmacokinetic profiles; this may affect how publicly reported experiences are interpreted.",
+          "severity": "watch"
+        },
+        {
+          "label": "Attribution problem in stack use",
+          "detail": "Because CJC-1295 is almost exclusively discussed in combination with Ipamorelin, isolating its independent contribution to any observed effect is not possible from the available information landscape.",
+          "severity": "info"
+        }
+      ],
+      "sources": [
+        {
+          "title": "r/BodyHackGuide — CJC-1295 (No DAC) + Ipamorelin Guide",
+          "url": "https://www.reddit.com/r/BodyHackGuide/comments/1noig5m/cjc1295_no_dac_ipamorelin_guide_stoopid_simple/",
+          "tier": "anecdotal",
+          "snippet": "Community-generated guide describing CJC-1295 mechanism and stack rationale with Ipamorelin; primary co-occurrence source for CJC-1295 data."
+        },
+        {
+          "title": "r/BodyHackGuide — CJC-1295+Ipamorelin cutting phase experience log",
+          "url": "https://www.reddit.com/r/BodyHackGuide/comments/1rjjec1/cjc1295ipamorelin_experience/",
+          "tier": "anecdotal",
+          "snippet": "User anecdotal log citing muscle preservation and recovery goals during an 8-week cut using the CJC-1295 + Ipamorelin stack."
+        },
+        {
+          "title": "r/Biohackers — CJC-1295 + Ipamorelin 3-month community thread",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1stsnij/cjc_1295_ipamorelin_anyone_here_thats_used_these/",
+          "tier": "anecdotal",
+          "snippet": "Forum thread soliciting long-term anecdotal reports on the CJC-1295 + Ipamorelin stack experience."
+        }
+      ]
+    },
+    {
+      "name": "Tesamorelin",
+      "aka": [
+        "TH9507",
+        "Egrifta"
+      ],
+      "signal_strength": "Emerging",
+      "discussion_velocity": "+0%",
+      "velocity_pct": 0,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "Tesamorelin is a synthetic GHRH analogue that has received FDA approval for a specific indication (HIV-associated lipodystrophy), making it distinct among the peptides in this report in having an approved therapeutic use. However, no scrape data was retrieved for Tesamorelin in either forum discussion or search/research/vendor tiers for this analysis; consequently, this entry is produced at minimal confidence and reflects the absence of signal rather than confirmed intelligence. Extrapolating its approved use to general muscle-retention contexts would require data not present in this scrape.",
+      "research_themes": [
+        "FDA-approved GHRH analogue for HIV-associated lipodystrophy (established regulatory record, not derived from supplied scrape)",
+        "Visceral fat reduction mechanism (general knowledge; not from supplied scrape data)",
+        "Potential muscle-retention interest in aging or wasting contexts (inferred from category; not in supplied data)",
+        "Off-label fitness and body-composition use discussion (not observed in supplied scrape)"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion data for Tesamorelin was entirely absent from the supplied scrape; no forum, Reddit, or community sentiment can be reported with any confidence for this analysis cycle. This absence itself is a meaningful signal, suggesting lower current discussion velocity relative to Ipamorelin and CJC-1295 in the muscle-retention category.",
+        "pros": [
+          "No anecdotal pros data available from supplied scrape"
+        ],
+        "concerns": [
+          "Complete absence of forum and research scrape data prevents meaningful public sentiment analysis",
+          "Off-label use context for muscle retention is not supported by supplied data"
+        ],
+        "common_questions": [
+          "How does Tesamorelin's approved indication relate to general muscle-retention use?",
+          "Is Tesamorelin discussed in fitness communities alongside CJC-1295 and Ipamorelin?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "Not determinable from supplied data",
+        "availability": "Not determinable from supplied data",
+        "market_activity": "Not determinable from supplied data",
+        "vendor_frequency": "Not determinable from supplied data",
+        "telehealth_visibility": "Not determinable from supplied data"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Tesamorelin reduces visceral adipose tissue in HIV-associated lipodystrophy",
+          "consensus": "Strong",
+          "note": "Basis for FDA approval; not derived from supplied scrape data — noted as established regulatory record only"
+        },
+        {
+          "claim": "Tesamorelin supports muscle retention in healthy adults",
+          "consensus": "Weak",
+          "note": "Not supported by any data in supplied scrape; claim extrapolated from approved-use adjacency only"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Approved-indication data vs. fitness-context claims",
+          "research": "Tesamorelin's research base centers on an approved, disease-specific indication; no supplied research data addresses muscle-retention outcomes in healthy populations.",
+          "marketing": "No vendor or marketing content was retrieved in this scrape cycle; the tension is noted as potential rather than observed.",
+          "note": "Absence of vendor data in this scrape does not confirm absence of market activity; it reflects the limits of this data cycle."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "No scrape data available",
+          "detail": "Zero forum, research, or vendor data was retrieved for Tesamorelin in this analysis cycle; all fields in this entry carry minimal confidence and should not be used as authoritative intelligence.",
+          "severity": "concern"
+        },
+        {
+          "label": "Approved drug status complexity",
+          "detail": "As an FDA-approved pharmaceutical, Tesamorelin has a different regulatory and access profile than research peptides; conflating it with unapproved compounds in fitness contexts represents a meaningful information-landscape risk.",
+          "severity": "watch"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "name": "Sermorelin",
+      "aka": [
+        "GRF 1-29",
+        "Sermorelin Acetate"
+      ],
+      "signal_strength": "Emerging",
+      "discussion_velocity": "+0%",
+      "velocity_pct": 0,
+      "consensus_score": "Weak",
+      "sentiment": "Cautious",
+      "research_activity": "Stable",
+      "risk_level": "Uncertain",
+      "trending": false,
+      "overview": "Sermorelin is a synthetic peptide corresponding to the first 29 amino acids of endogenous GHRH, studied for its role in stimulating pituitary GH secretion. It was previously FDA-approved for diagnostic and therapeutic uses before being discontinued as a commercial product, and it has re-emerged in the telehealth and compounding pharmacy landscape. No scrape data was retrieved for Sermorelin in either forum or search/research/vendor tiers for this analysis cycle; this entry reflects that data absence and should be treated as low-confidence provisional intelligence.",
+      "research_themes": [
+        "GHRH fragment 1-29 mechanism of pituitary GH stimulation (general knowledge; not from supplied scrape)",
+        "Historical FDA approval and subsequent market withdrawal (regulatory context; not from supplied scrape)",
+        "Re-emergence in compounding and telehealth contexts for anti-aging and body composition (general knowledge; not confirmed by supplied scrape)",
+        "Muscle-retention interest in aging-population and growth-hormone-deficiency contexts (inferred; not in supplied data)"
+      ],
+      "public_sentiment": {
+        "summary": "Anecdotal public discussion data for Sermorelin was entirely absent from the supplied scrape for this analysis cycle; no community forum or Reddit sentiment can be reported with confidence. The absence of discussion-tier data suggests Sermorelin may currently attract lower organic community discussion velocity than Ipamorelin in the muscle-retention category, though this cannot be confirmed without additional scrape cycles.",
+        "pros": [
+          "No anecdotal pros data available from supplied scrape"
+        ],
+        "concerns": [
+          "Complete absence of forum and research scrape data prevents meaningful public sentiment analysis",
+          "Historical regulatory history may introduce complexity in how online communities discuss its availability"
+        ],
+        "common_questions": [
+          "How does Sermorelin compare to CJC-1295 for muscle-retention purposes in community discussion?",
+          "Is Sermorelin accessible through compounding pharmacies and how is it discussed in telehealth contexts?"
+        ]
+      },
+      "market_snapshot": {
+        "price_range": "Not determinable from supplied data",
+        "availability": "Not determinable from supplied data",
+        "market_activity": "Not determinable from supplied data",
+        "vendor_frequency": "Not determinable from supplied data",
+        "telehealth_visibility": "Not determinable from supplied data"
+      },
+      "claim_consensus": [
+        {
+          "claim": "Sermorelin stimulates pituitary GH release via GHRH receptor agonism",
+          "consensus": "Strong",
+          "note": "Established pharmacological mechanism; not derived from supplied scrape data — noted as general knowledge only"
+        },
+        {
+          "claim": "Sermorelin supports muscle retention in healthy adults",
+          "consensus": "Weak",
+          "note": "Not supported by any data in supplied scrape; claim reflects general category adjacency only"
+        }
+      ],
+      "conflicting_claims": [
+        {
+          "topic": "Historical approval status vs. current fitness-market positioning",
+          "research": "No research scrape data retrieved; Sermorelin's documented research base relates to GH-deficiency contexts and prior pharmaceutical approval, not general muscle-retention use.",
+          "marketing": "No vendor or telehealth content was retrieved in this scrape cycle; the tension is noted as potential based on known market re-emergence of compounded Sermorelin.",
+          "note": "Absence of vendor data in this scrape does not confirm absence of commercial activity; additional scrape cycles are needed to characterize the current vendor landscape."
+        }
+      ],
+      "risk_flags": [
+        {
+          "label": "No scrape data available",
+          "detail": "Zero forum, research, or vendor data was retrieved for Sermorelin in this analysis cycle; all fields in this entry carry minimal confidence and should not be treated as authoritative intelligence.",
+          "severity": "concern"
+        },
+        {
+          "label": "Regulatory status complexity",
+          "detail": "Sermorelin has a complex regulatory history including prior FDA approval and withdrawal; community and vendor discussions of its current availability may not accurately reflect its legal or regulatory status in a given jurisdiction.",
+          "severity": "watch"
+        }
+      ],
+      "sources": []
     }
   ]
 }
