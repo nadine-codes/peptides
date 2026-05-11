@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "refresh": "tsx scripts/refresh.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.1",
+    "@supabase/supabase-js": "^2.105.4",
     "apify-client": "^2.11.1",
     "framer-motion": "^11.18.0",
     "next": "^15.5.18",

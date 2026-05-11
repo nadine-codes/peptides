@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
-import { isCategorySlug } from "@/lib/peptides";
+import { isCategorySlug, peptideSlug as makeSlug } from "@/lib/peptides";
+import { getServerSupabase, supabaseConfigured } from "@/lib/supabase";
 import { getFallbackReport, getFallbackPeptide } from "@/lib/fallback";
+import type { CategorySlug, IntelReport } from "@/lib/types";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -16,8 +19,31 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "missing peptide" }, { status: 400 });
   }
 
-  const report = getFallbackReport(category);
-  const target = getFallbackPeptide(category, peptide);
+  let report: IntelReport | null = null;
+
+  if (supabaseConfigured()) {
+    const supabase = getServerSupabase();
+    const { data } = await supabase
+      .from("intel_reports")
+      .select("payload, mode, generated_at")
+      .eq("category", category)
+      .maybeSingle();
+    if (data) {
+      report = {
+        ...(data.payload as IntelReport),
+        mode: data.mode,
+        generated_at: data.generated_at,
+      };
+    }
+  }
+
+  if (!report) {
+    report = getFallbackReport(category as CategorySlug, "demo");
+  }
+
+  const target =
+    report.peptides.find((p) => makeSlug(p.name) === peptide) ||
+    getFallbackPeptide(category as CategorySlug, peptide);
 
   if (!target) {
     return NextResponse.json({ error: "peptide not found" }, { status: 404 });

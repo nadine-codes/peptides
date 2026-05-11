@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import type { CategorySlug, IntelReport, PeptideReport } from "@/lib/types";
-import { peptideSlug } from "@/lib/peptides";
+import type { CategorySlug, PeptideReport } from "@/lib/types";
 import { MetricBadge } from "@/components/MetricBadge";
 import { Sparkline } from "@/components/Sparkline";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -28,23 +27,10 @@ export function PeptideDetailClient({ category, categoryLabel, peptideSlug: targ
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      // Try sessionStorage first (came from /report/[category])
-      try {
-        const cached = sessionStorage.getItem(`peptsight:report:${category}`);
-        if (cached) {
-          const parsed = JSON.parse(cached) as IntelReport;
-          const hit = parsed.peptides.find((p) => peptideSlug(p.name) === targetSlug);
-          if (hit) {
-            if (!cancelled) setPeptide(hit);
-            return;
-          }
-        }
-      } catch {}
-
-      // Fall back to /api/peptide
       try {
         const res = await fetch(
           `/api/peptide?category=${encodeURIComponent(category)}&peptide=${encodeURIComponent(targetSlug)}`,
+          { cache: "no-store" },
         );
         if (!res.ok) throw new Error(`status ${res.status}`);
         const data = await res.json();

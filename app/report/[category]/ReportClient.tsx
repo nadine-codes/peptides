@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { AgentActivity } from "@/components/AgentActivity";
 import { PeptideCard } from "@/components/PeptideCard";
-import { RefreshOverlay } from "@/components/RefreshOverlay";
-import type { AgentEvent, CategorySlug, IntelReport } from "@/lib/types";
+import { RefreshNotification } from "@/components/RefreshNotification";
+import { useLatestEtlRun } from "@/lib/useEtlRun";
+import type { CategorySlug, IntelReport } from "@/lib/types";
 
 interface ReportClientProps {
   category: CategorySlug;
@@ -15,142 +16,70 @@ interface ReportClientProps {
 }
 
 export function ReportClient({ category, categoryLabel, blurb }: ReportClientProps) {
-  const [events, setEvents] = useState<AgentEvent[]>([]);
   const [report, setReport] = useState<IntelReport | null>(null);
-  const [done, setDone] = useState(false);
-  const [mode, setMode] = useState<"live" | "demo" | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [refreshing, setRefreshing] = useState(false);
-  const [refreshEvents, setRefreshEvents] = useState<AgentEvent[]>([]);
-  const [refreshDone, setRefreshDone] = useState(false);
-  const inFlightRef = useRef<AbortController | null>(null);
+  const [refreshError, setRefreshError] = useState<string | null>(null);
 
-  const runStream = useCallback(
-    async (opts: { force: boolean }) => {
-      // Cancel any in-flight stream first
-      if (inFlightRef.current) inFlightRef.current.abort();
-      const ctrl = new AbortController();
-      inFlightRef.current = ctrl;
+  const { run } = useLatestEtlRun(category);
 
-      const isRefresh = opts.force;
-      let cancelled = false;
-
-      if (isRefresh) {
-        setRefreshing(true);
-        setRefreshEvents([]);
-        setRefreshDone(false);
-      } else {
-        setEvents([]);
-        setDone(false);
-      }
-
-      try {
-        const url = isRefresh ? "/api/intelligence?refresh=true" : "/api/intelligence";
-        const res = await fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ category }),
-          signal: ctrl.signal,
-        });
-        if (!res.ok || !res.body) throw new Error(`stream failed: ${res.status}`);
-
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        let buffer = "";
-
-        while (!cancelled) {
-          const { value, done: streamDone } = await reader.read();
-          if (streamDone) break;
-          buffer += decoder.decode(value, { stream: true });
-          const parts = buffer.split("\n\n");
-          buffer = parts.pop() || "";
-          for (const part of parts) {
-            const line = part.trim();
-            if (!line.startsWith("data:")) continue;
-            const json = line.slice(5).trim();
-            if (!json) continue;
-            try {
-              const evt = JSON.parse(json) as AgentEvent;
-              if (cancelled) return;
-              if (isRefresh) {
-                setRefreshEvents((prev) => [...prev, evt]);
-              } else {
-                setEvents((prev) => [...prev, evt]);
-              }
-              if (evt.type === "mode") setMode(evt.mode);
-              if (evt.type === "result") {
-                setReport(evt.data);
-                try {
-                  sessionStorage.setItem(
-                    `peptsight:report:${category}`,
-                    JSON.stringify(evt.data),
-                  );
-                } catch {}
-              }
-              if (evt.type === "done") {
-                if (isRefresh) setRefreshDone(true);
-                else setDone(true);
-              }
-            } catch {
-              // skip malformed line
-            }
-          }
-        }
-        if (!cancelled) {
-          if (isRefresh) setRefreshDone(true);
-          else setDone(true);
-        }
-      } catch (e) {
-        if (cancelled) return;
-        if ((e as Error).name === "AbortError") return;
-        setError((e as Error).message);
-        if (isRefresh) setRefreshDone(true);
-        else setDone(true);
-      } finally {
-        if (inFlightRef.current === ctrl) inFlightRef.current = null;
-      }
-
-      return () => {
-        cancelled = true;
-      };
-    },
-    [category],
-  );
-
-  useEffect(() => {
-    const ctrl = new AbortController();
-    let cancelled = false;
-    (async () => {
-      if (cancelled) return;
-      await runStream({ force: false });
-    })();
-    return () => {
-      cancelled = true;
-      ctrl.abort();
-      if (inFlightRef.current) inFlightRef.current.abort();
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  const fetchReport = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/report?category=${encodeURIComponent(category)}`, {
+        cache: "no-store",
+      });
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      const data = await res.json();
+      setReport(data.report as IntelReport);
+      setLoadError(null);
+    } catch (err) {
+      setLoadError((err as Error).message);
+    }
   }, [category]);
 
-  const handleRefresh = useCallback(() => {
-    if (refreshing) return;
-    runStream({ force: true });
-  }, [refreshing, runStream]);
+  // Initial load.
+  useEffect(() => {
+    fetchReport();
+  }, [fetchReport]);
 
-  const handleCloseOverlay = useCallback(() => {
-    setRefreshing(false);
-  }, []);
+  // When a run finishes successfully, re-fetch the freshly-written report.
+  useEffect(() => {
+    if (!run) return;
+    if (run.status === "success") {
+      fetchReport();
+      setRefreshing(false);
+    } else if (run.status === "error") {
+      setRefreshing(false);
+    }
+  }, [run?.status, run?.id, fetchReport]);
 
+  const handleRefresh = useCallback(async () => {
+    if (refreshing || (run && run.status === "running")) return;
+    setRefreshing(true);
+    setRefreshError(null);
+    try {
+      const res = await fetch(`/api/refresh?category=${encodeURIComponent(category)}&trigger=manual`, {
+        method: "POST",
+      });
+      if (!res.ok) {
+        const text = await res.text().catch(() => "");
+        throw new Error(text || `status ${res.status}`);
+      }
+    } catch (err) {
+      setRefreshError((err as Error).message);
+      setRefreshing(false);
+    }
+  }, [category, refreshing, run]);
+
+  const events = useMemo(() => (run ? run.events : []), [run]);
+  const done = run ? run.status !== "running" : true;
+  const mode: "live" | "demo" | null = run?.mode ?? report?.mode ?? null;
   const generatedLabel = report ? timeAgo(report.generated_at) : null;
+  const isRunning = run?.status === "running";
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-10">
-      <RefreshOverlay
-        open={refreshing}
-        events={refreshEvents}
-        done={refreshDone}
-        onClose={handleCloseOverlay}
-      />
+      <RefreshNotification run={run} />
 
       <header className="mb-8">
         <Link
@@ -173,28 +102,34 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
           <div className="flex flex-col items-end gap-3">
             <RefreshButton
               onClick={handleRefresh}
-              disabled={refreshing || !report}
+              disabled={refreshing || isRunning || !report}
+              isRunning={isRunning}
               generatedLabel={generatedLabel}
             />
             <div className="text-right text-2xs font-mono uppercase tracking-[0.18em] text-ink-muted">
               {events.length} agent events
             </div>
+            {refreshError && (
+              <div className="text-2xs font-mono uppercase tracking-[0.18em] text-signal-red">
+                {refreshError}
+              </div>
+            )}
           </div>
         </div>
       </header>
 
       <div className="grid gap-6 lg:grid-cols-[1fr,360px]">
         <div className="order-2 lg:order-1">
-          {!report && !error && (
+          {!report && !loadError && (
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {Array.from({ length: 4 }).map((_, i) => (
                 <SkeletonCard key={i} index={i} />
               ))}
             </div>
           )}
-          {error && (
+          {loadError && (
             <div className="rounded-xl border border-signal-red/40 bg-signal-red/5 p-4 text-sm text-signal-red">
-              Stream failed: {error}
+              Failed to load report: {loadError}
             </div>
           )}
           {report && (
@@ -223,10 +158,12 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
 function RefreshButton({
   onClick,
   disabled,
+  isRunning,
   generatedLabel,
 }: {
   onClick: () => void;
   disabled: boolean;
+  isRunning: boolean;
   generatedLabel: string | null;
 }) {
   return (
@@ -236,9 +173,9 @@ function RefreshButton({
       disabled={disabled}
       className="group inline-flex items-center gap-2 rounded-lg border border-line-strong bg-bg-surface px-3.5 py-2 text-sm text-ink-primary transition hover:border-signal-cyan/60 hover:text-signal-cyan disabled:cursor-not-allowed disabled:opacity-50"
     >
-      <RefreshIcon />
-      <span className="font-medium">Refresh data</span>
-      {generatedLabel ? (
+      <RefreshIcon spinning={isRunning} />
+      <span className="font-medium">{isRunning ? "Refreshing…" : "Refresh data"}</span>
+      {generatedLabel && !isRunning ? (
         <span className="font-mono text-2xs uppercase tracking-[0.16em] text-ink-muted group-hover:text-signal-cyan/70">
           · updated {generatedLabel}
         </span>
@@ -247,9 +184,15 @@ function RefreshButton({
   );
 }
 
-function RefreshIcon() {
+function RefreshIcon({ spinning }: { spinning: boolean }) {
   return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.7">
+    <svg
+      viewBox="0 0 24 24"
+      className={`h-4 w-4 ${spinning ? "animate-spin" : ""}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+    >
       <path d="M3 12a9 9 0 0 1 15.5-6.3L21 8" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M21 3v5h-5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M21 12a9 9 0 0 1-15.5 6.3L3 16" strokeLinecap="round" strokeLinejoin="round" />
