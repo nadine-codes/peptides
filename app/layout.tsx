@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { DisclaimerBanner } from "@/components/DisclaimerBanner";
 import { Footer } from "@/components/Footer";
-import { HackathonBadge } from "@/components/HackathonBadge";
 import { TopNav } from "@/components/TopNav";
 
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -33,7 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <TopNav />
         <main className="relative">{children}</main>
         <Footer />
-        <HackathonBadge />
         <Analytics />
       </body>
     </html>
