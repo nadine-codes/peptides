@@ -2,7 +2,7 @@ export function Logo({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <span className="relative grid h-7 w-7 place-items-center rounded-md bg-bg-elevated ring-line">
-        <svg viewBox="0 0 24 24" className="h-4 w-4 text-signal-cyan" fill="none">
+        <svg viewBox="1 1 18 18" className="h-4 w-4 text-signal-cyan" fill="none">
           <path
             d="M5 7c2-3 6-3 8 0 2 3 0 6-3 8-3 2-7 0-7-4 0-2 1-3 2-4z"
             stroke="currentColor"
