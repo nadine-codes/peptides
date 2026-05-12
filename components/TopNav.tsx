@@ -11,7 +11,9 @@ export function TopNav() {
         <div className="flex items-center gap-2 text-2xs uppercase tracking-[0.18em] text-ink-muted">
           <span className="font-mono">v0.1</span>
           <span className="text-ink-dim">·</span>
-          <span className="text-right">Educational Research Aggregation</span>
+          <span className="text-right">
+            Educational Research <br className="md:hidden" />Aggregation
+          </span>
         </div>
       </div>
     </header>
