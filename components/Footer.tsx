@@ -25,7 +25,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-8 text-2xs uppercase tracking-[0.18em] text-ink-dim">
-          © {new Date().getFullYear()} PeptSight · Built for the AI Agents hackathon
+          © {new Date().getFullYear()} PeptSight · 3rd place at the 2026 San Francisco All Things Agents Hackathon · Built solo
         </p>
       </div>
     </footer>
