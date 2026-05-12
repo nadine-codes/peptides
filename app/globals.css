@@ -12,9 +12,11 @@
     color: #f4f4f5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Prevent any inner overflow from creating a page-wide horizontal scroll
-       (mobile is most affected when content has long unbreakable tokens). */
-    overflow-x: hidden;
+    /* Prevent any inner overflow from creating a page-wide horizontal scroll.
+       overflow-x: clip clips the same as hidden but does NOT create a
+       scroll container — required so position: sticky on the TopNav keeps
+       working (overflow: hidden on an ancestor breaks sticky). */
+    overflow-x: clip;
   }
 
   body {
