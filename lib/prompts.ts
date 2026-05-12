@@ -93,7 +93,7 @@ Return JSON matching this exact schema:
       "velocity_pct": <number 0-500>,
       "consensus_score": "Strong" | "Mixed" | "Weak" | "Anecdotal",
       "sentiment": "Positive" | "Mixed" | "Divided" | "Cautious",
-      "research_activity": "Accelerating" | "Stable" | "Declining",
+      "research_activity": "Rising" | "Stable" | "Declining",
       "risk_level": "Low" | "Moderate" | "Elevated" | "Uncertain",
       "trending": <boolean>,
       "overview": "<2-3 sentences, neutral, educational, no recommendations>",

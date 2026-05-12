@@ -21,7 +21,7 @@ const SENTIMENT_STYLES: Record<SentimentLabel, string> = {
 };
 
 const RESEARCH_STYLES: Record<ResearchActivity, string> = {
-  Accelerating: "text-signal-cyan border-signal-cyan/40 bg-signal-cyan/5",
+  Rising: "text-signal-cyan border-signal-cyan/40 bg-signal-cyan/5",
   Stable: "text-ink-secondary border-line-strong bg-bg-elevated",
   Declining: "text-ink-muted border-line bg-bg-elevated",
 };

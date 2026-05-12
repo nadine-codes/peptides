@@ -10,7 +10,7 @@ export type CategorySlug =
 export type SignalStrength = "High" | "Medium" | "Emerging";
 export type ConsensusLevel = "Strong" | "Mixed" | "Weak" | "Anecdotal";
 export type SentimentLabel = "Positive" | "Mixed" | "Divided" | "Cautious";
-export type ResearchActivity = "Accelerating" | "Stable" | "Declining";
+export type ResearchActivity = "Rising" | "Stable" | "Declining";
 export type RiskLevel = "Low" | "Moderate" | "Elevated" | "Uncertain";
 export type SourceTier = "research" | "educational" | "anecdotal" | "vendor" | "telehealth";
 

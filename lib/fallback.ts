@@ -17,7 +17,7 @@ function fatLoss(): PeptideReport[] {
       velocity_pct: 248,
       consensus_score: "Strong",
       sentiment: "Positive",
-      research_activity: "Accelerating",
+      research_activity: "Rising",
       risk_level: "Moderate",
       trending: true,
       overview:
@@ -172,7 +172,7 @@ function fatLoss(): PeptideReport[] {
       velocity_pct: 412,
       consensus_score: "Weak",
       sentiment: "Mixed",
-      research_activity: "Accelerating",
+      research_activity: "Rising",
       risk_level: "Uncertain",
       trending: true,
       overview:
@@ -236,7 +236,7 @@ function fatLoss(): PeptideReport[] {
       velocity_pct: 168,
       consensus: "Weak",
       sentiment: "Cautious",
-      research: "Accelerating",
+      research: "Rising",
       risk: "Uncertain",
       summary:
         "A monoamine reuptake inhibitor with phase-2 weight-loss data and recently renewed phase-3 activity. Public discussion has accelerated alongside renewed trial interest, but availability and regulatory status remain limited.",
@@ -508,7 +508,7 @@ function recovery(): PeptideReport[] {
       velocity_pct: 295,
       consensus_score: "Weak",
       sentiment: "Cautious",
-      research_activity: "Accelerating",
+      research_activity: "Rising",
       risk_level: "Uncertain",
       trending: true,
       overview:
@@ -596,7 +596,7 @@ function longevity(): PeptideReport[] {
       velocity_pct: 142,
       consensus: "Weak",
       sentiment: "Mixed",
-      research: "Accelerating",
+      research: "Rising",
       risk: "Uncertain",
       summary:
         "A thymus-derived peptide preparation discussed in immune-aging contexts, with most published work originating from a small research community.",
@@ -642,7 +642,7 @@ function longevity(): PeptideReport[] {
       velocity_pct: 220,
       consensus: "Weak",
       sentiment: "Cautious",
-      research: "Accelerating",
+      research: "Rising",
       risk: "Uncertain",
       summary:
         "A mitochondrial-derived peptide actively studied in metabolic-aging research. Public discussion outpaces clinical maturity.",
@@ -1018,7 +1018,7 @@ interface GenericInput {
   velocity_pct: number;
   consensus: "Strong" | "Mixed" | "Weak" | "Anecdotal";
   sentiment: "Positive" | "Mixed" | "Divided" | "Cautious";
-  research: "Accelerating" | "Stable" | "Declining";
+  research: "Rising" | "Stable" | "Declining";
   risk: "Low" | "Moderate" | "Elevated" | "Uncertain";
   summary: string;
   themes: string[];
@@ -1056,7 +1056,7 @@ function genericPeptide(name: string, g: GenericInput): PeptideReport {
     market_snapshot: {
       price_range: priceForSignal(g.signal_strength),
       availability: g.signal_strength === "Emerging" ? "Limited; mostly research-chemical channels" : "Widely available across peptide vendors",
-      market_activity: g.research === "Accelerating" ? "Rising marketing visibility" : "Stable market presence",
+      market_activity: g.research === "Rising" ? "Rising marketing visibility" : "Stable market presence",
       vendor_frequency: g.signal_strength === "High" ? "Very high" : g.signal_strength === "Medium" ? "High" : "Medium",
       telehealth_visibility: g.signal_strength === "High" ? "High" : "Medium",
     },
