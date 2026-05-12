@@ -19,7 +19,7 @@ export function PeptideCard({ category, peptide, index }: PeptideCardProps) {
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, delay: index * 0.05, ease: "easeOut" }}
-      className="group relative rounded-xl border border-line bg-bg-surface ring-line transition-colors hover:border-line-strong"
+      className="group relative flex h-full flex-col rounded-xl border border-line bg-bg-surface ring-line transition-colors hover:border-line-strong"
     >
       {peptide.trending && (
         <span className="absolute right-4 top-4 inline-flex items-center gap-1 rounded-full border border-signal-cyan/40 bg-signal-cyan/10 px-2 py-0.5 text-2xs font-mono uppercase tracking-[0.18em] text-signal-cyan">
@@ -28,7 +28,7 @@ export function PeptideCard({ category, peptide, index }: PeptideCardProps) {
         </span>
       )}
 
-      <div className="p-5">
+      <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-2xs font-mono uppercase tracking-[0.2em] text-ink-muted">
@@ -68,14 +68,16 @@ export function PeptideCard({ category, peptide, index }: PeptideCardProps) {
           <Sparkline velocityPct={peptide.velocity_pct} className="mt-2 h-7 w-full" />
         </div>
 
-        <div className="mt-4 flex items-center justify-between gap-3 border-t border-line/70 pt-4">
+        <div className="mt-auto flex items-center justify-between gap-3 border-t border-line/70 pt-4">
           <MetricBadge kind="risk" label="Risk" value={peptide.risk_level} />
           <Link
             href={`/peptide/${category}/${peptideSlug(peptide.name)}`}
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-signal-cyan transition hover:text-ink-primary"
+            className="group/btn inline-flex items-center gap-1.5 rounded-lg border border-signal-cyan/45 bg-signal-cyan/10 px-3.5 py-2 text-sm font-semibold text-signal-cyan shadow-[0_0_0_1px_rgba(34,211,238,0.08),0_10px_30px_-18px_rgba(34,211,238,0.6)] transition hover:border-signal-cyan/80 hover:bg-signal-cyan/20 hover:text-ink-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal-cyan/70"
           >
-            View Intelligence
-            <span aria-hidden>→</span>
+            View Report
+            <span aria-hidden className="transition-transform group-hover/btn:translate-x-0.5">
+              →
+            </span>
           </Link>
         </div>
       </div>
