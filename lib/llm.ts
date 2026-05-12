@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { SYSTEM_PROMPT, buildUserPrompt, type SynthesisInput } from "./prompts";
-import type { IntelReport, PeptideReport } from "./types";
+import type { IntelReport } from "./types";
+import { normalizePeptide } from "./normalize";
 
 const DEFAULT_MODEL = "claude-sonnet-4-6";
 
@@ -54,36 +55,11 @@ export async function synthesizeReport(input: SynthesisInput): Promise<IntelRepo
       ...parsed,
       mode: "live",
       generated_at: parsed.generated_at || new Date().toISOString(),
-      peptides: parsed.peptides.map(normalizeVelocity),
+      peptides: parsed.peptides.map(normalizePeptide),
     };
   } catch {
     return null;
   }
-}
-
-function normalizeVelocity(p: PeptideReport): PeptideReport {
-  const rawPct = (p as { velocity_pct?: unknown }).velocity_pct;
-  const rawLabel = (p as { discussion_velocity?: unknown }).discussion_velocity;
-
-  let pct: number | null = null;
-  if (typeof rawPct === "number" && Number.isFinite(rawPct)) {
-    pct = rawPct;
-  } else if (typeof rawPct === "string") {
-    const n = Number(rawPct.replace(/[^\d.-]/g, ""));
-    if (Number.isFinite(n)) pct = n;
-  }
-  if (pct === null && typeof rawLabel === "string") {
-    const n = Number(rawLabel.replace(/[^\d.-]/g, ""));
-    if (Number.isFinite(n)) pct = n;
-  }
-  if (pct === null) pct = 0;
-
-  const label =
-    typeof rawLabel === "string" && rawLabel.trim().length > 0
-      ? rawLabel
-      : `${pct >= 0 ? "+" : ""}${pct}%`;
-
-  return { ...p, velocity_pct: pct, discussion_velocity: label };
 }
 
 function extractJson(text: string): string | null {

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { isCategorySlug } from "@/lib/peptides";
 import { getServerSupabase, supabaseConfigured } from "@/lib/supabase";
 import { getFallbackReport } from "@/lib/fallback";
+import { normalizeReport } from "@/lib/normalize";
 import type { CategorySlug, IntelReport } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -16,7 +17,7 @@ export async function GET(req: Request) {
   }
 
   if (!supabaseConfigured()) {
-    const fallback = getFallbackReport(category as CategorySlug, "demo");
+    const fallback = normalizeReport(getFallbackReport(category as CategorySlug, "demo"));
     return NextResponse.json({ report: fallback, source: "fallback-no-supabase" });
   }
 
@@ -34,17 +35,17 @@ export async function GET(req: Request) {
   if (!data) {
     // No row yet — first cold start before any cron has run. Serve fallback so
     // the UI never blanks; cron / manual refresh will populate the row.
-    const fallback = getFallbackReport(category as CategorySlug, "demo");
+    const fallback = normalizeReport(getFallbackReport(category as CategorySlug, "demo"));
     return NextResponse.json({ report: fallback, source: "fallback-empty" });
   }
 
   const report = data.payload as IntelReport;
   return NextResponse.json({
-    report: {
+    report: normalizeReport({
       ...report,
       mode: data.mode,
       generated_at: data.generated_at,
-    },
+    }),
     source: "supabase",
   });
 }
