@@ -19,3 +19,4 @@ next-env.d.ts
 *.tsbuildinfo
 .mcp.json
 skills-lock.json
+claude-reflect/
