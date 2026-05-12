@@ -175,7 +175,7 @@ function Line({
     <div className="flex items-baseline gap-2">
       <span className="w-12 shrink-0 text-ink-dim">{ts}</span>
       <span className={`w-3 shrink-0 ${toneClass}`}>{icon}</span>
-      <span className="flex-1 leading-snug">{children}</span>
+      <span className="min-w-0 flex-1 break-all leading-snug">{children}</span>
     </div>
   );
 }

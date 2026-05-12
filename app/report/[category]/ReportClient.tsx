@@ -119,7 +119,7 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
       </header>
 
       <div className="grid gap-6 lg:grid-cols-[1fr,360px]">
-        <div className="order-2 lg:order-1">
+        <div className="min-w-0">
           {!report && !loadError && (
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {Array.from({ length: 4 }).map((_, i) => (
@@ -147,7 +147,7 @@ export function ReportClient({ category, categoryLabel, blurb }: ReportClientPro
           )}
         </div>
 
-        <div className="order-1 lg:order-2 lg:sticky lg:top-20 lg:self-start">
+        <div className="min-w-0 lg:sticky lg:top-20 lg:self-start">
           <AgentActivity events={events} done={done} mode={mode} />
         </div>
       </div>

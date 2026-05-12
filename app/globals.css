@@ -12,6 +12,9 @@
     color: #f4f4f5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Prevent any inner overflow from creating a page-wide horizontal scroll
+       (mobile is most affected when content has long unbreakable tokens). */
+    overflow-x: hidden;
   }
 
   body {
