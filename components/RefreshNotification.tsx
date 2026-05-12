@@ -20,9 +20,6 @@ interface Props {
 }
 
 export function RefreshNotification({ run }: Props) {
-  // Show toast when:
-  //  - a run is in progress, OR
-  //  - a run just finished (success/error) — auto-dismiss after 4s.
   const [dismissed, setDismissed] = useState(false);
   const [latestSeenId, setLatestSeenId] = useState<string | null>(null);
 
@@ -35,21 +32,23 @@ export function RefreshNotification({ run }: Props) {
     }
   }, [run, latestSeenId]);
 
-  // Auto-dismiss completed runs after a short pause.
+  // Linger longer on success so the green-lit state is readable, then fade.
+  // Errors stay shorter — failure is something to act on, not celebrate.
+  const linger = run?.status === "success" ? 10_000 : 4_000;
+
   useEffect(() => {
     if (!run) return;
     if (run.status === "running") return;
-    const t = setTimeout(() => setDismissed(true), 4000);
+    const t = setTimeout(() => setDismissed(true), linger);
     return () => clearTimeout(t);
-  }, [run?.status, run?.id]);
+  }, [run?.status, run?.id, linger]);
 
   const visible = useMemo(() => {
     if (!run) return false;
     if (dismissed) return false;
     if (run.status === "running") return true;
-    // Brief celebration / failure visibility window.
-    return Boolean(run.finished_at) && Date.now() - new Date(run.finished_at as string).getTime() < 5000;
-  }, [run, dismissed]);
+    return Boolean(run.finished_at) && Date.now() - new Date(run.finished_at as string).getTime() < linger + 1000;
+  }, [run, dismissed, linger]);
 
   return (
     <div className="pointer-events-none fixed right-4 top-4 z-50 flex max-w-[360px] flex-col items-end gap-2 sm:right-6 sm:top-6">
@@ -60,7 +59,10 @@ export function RefreshNotification({ run }: Props) {
             initial={{ opacity: 0, y: -10, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.97 }}
-            transition={{ duration: 0.28, ease: "easeOut" }}
+            transition={{
+              duration: run.status === "success" ? 1.2 : 0.28,
+              ease: "easeOut",
+            }}
             className="glass pointer-events-auto w-[340px] rounded-xl border border-line/70 bg-bg-surface/95 p-4 shadow-2xl backdrop-blur"
             role="status"
             aria-live="polite"
