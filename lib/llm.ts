@@ -54,7 +54,9 @@ export async function synthesizeReport(input: SynthesisInput): Promise<IntelRepo
     return {
       ...parsed,
       mode: "live",
-      generated_at: parsed.generated_at || new Date().toISOString(),
+      // generated_at is owned by the server clock, never the LLM — the model
+      // hallucinates a date near its training cutoff if asked to produce one.
+      generated_at: new Date().toISOString(),
       peptides: parsed.peptides.map(normalizePeptide),
     };
   } catch {

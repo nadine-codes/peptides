@@ -82,7 +82,6 @@ Return JSON matching this exact schema:
 {
   "category": "${category.slug}",
   "category_label": "${category.label}",
-  "generated_at": "<ISO timestamp>",
   "mode": "live",
   "peptides": [
     {
