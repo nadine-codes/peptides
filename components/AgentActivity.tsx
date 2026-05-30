@@ -185,9 +185,12 @@ function Line({
     muted: "text-ink-muted",
   }[tone];
   return (
-    <div className="flex items-baseline gap-2">
-      <span className="w-12 shrink-0 text-ink-dim">{ts}</span>
-      <span className={`w-3 shrink-0 ${toneClass}`}>{icon}</span>
+    <div className="flex items-baseline">
+      {/* Natural width (all timestamps share the fixed MM:SS.mm format, so columns
+          still align) + nowrap so the last digit can never clip under the icon at
+          any font size or viewport. ml-0.5 keeps a tight ~2px gap to the icon. */}
+      <span className="shrink-0 whitespace-nowrap tabular-nums text-ink-dim">{ts}</span>
+      <span className={`ml-0.5 mr-2 w-3 shrink-0 ${toneClass}`}>{icon}</span>
       <span className="min-w-0 flex-1 break-all leading-snug">{children}</span>
     </div>
   );
