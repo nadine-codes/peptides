@@ -138,6 +138,19 @@ function EventLine({ event }: { event: AgentEvent }) {
         </Line>
       );
     case "error":
+      // Recoverable errors are graceful fallbacks (e.g. live synthesis unavailable),
+      // not real failures. Render them as a calm muted notice instead of a red alarm,
+      // and never surface raw upstream API payloads to visitors.
+      if (event.recoverable) {
+        return (
+          <Line ts={ts} icon="◇" tone="muted">
+            <span className="text-ink-secondary">notice</span>{" "}
+            <span className="text-ink-muted">
+              live synthesis unavailable — served curated intelligence
+            </span>
+          </Line>
+        );
+      }
       return (
         <Line ts={ts} icon="!" tone="red">
           <span className="text-signal-red">error</span>{" "}

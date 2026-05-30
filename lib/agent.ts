@@ -27,7 +27,11 @@ export async function runIntelligencePipeline(
   options: PipelineOptions = {},
 ): Promise<PipelineResult> {
   const cat = CATEGORY_BY_SLUG[category];
-  const liveMode = apifyAvailable() && llmAvailable();
+  // Set DEMO_MODE=true in .env.local to pause all paid live calls (Anthropic + Apify)
+  // and run entirely on curated data — no API charges, no red error events. Flip it
+  // back to false (or remove it) to resume the live pipeline once funded.
+  const liveMode =
+    process.env.DEMO_MODE !== "true" && apifyAvailable() && llmAvailable();
 
   const emit: Emit = async (e) => {
     if (!options.onEvent) return;
