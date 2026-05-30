@@ -42,8 +42,8 @@ export async function runIntelligencePipeline(
     type: "mode",
     mode: liveMode ? "live" : "demo",
     reason: liveMode
-      ? "APIFY_TOKEN and ANTHROPIC_API_KEY present — running live pipeline"
-      : "Running curated demo data — set APIFY_TOKEN and ANTHROPIC_API_KEY for live mode",
+      ? "Live pipeline — aggregating from real-time Reddit, search, and research sources"
+      : "Curated intelligence — serving a representative pre-aggregated dataset",
   });
 
   await emit({ type: "status", phase: "interpret", message: `Interpreting research category: ${cat.label}…` });
